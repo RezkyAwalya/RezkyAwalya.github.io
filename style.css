@@ -164,13 +164,16 @@ nav a.active {
 }
 
 .hero h1 span {
-    background:
-        linear-gradient(
-            135deg,
-            #6c63ff,
-            #b56cff
-        );
+    background: linear-gradient(
+        135deg,
+        #6c63ff,
+        #b56cff
+    );
+
+    background-clip: text;
     -webkit-background-clip: text;
+
+    color: transparent;
     -webkit-text-fill-color: transparent;
 }
 
