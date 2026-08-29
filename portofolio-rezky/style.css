@@ -1,0 +1,685 @@
+/* ==========================================================================
+   WEBSITE PORTOFOLIO - REZKY AWALYA
+   Prodi S1 Teknik Komputer, Jurusan Teknik Informatika & Komputer (JTIK)
+   Universitas Negeri Makassar (UNM)
+   
+   File: style.css (External CSS Style Sheet)
+   Berdasarkan Modul Praktikum Pemrograman Web (Modul 3, 4, 5, 6 & Slide Teori CSS)
+   ========================================================================== */
+
+/* ==========================================================================
+   1. RESET & DASAR TIPOGRAFI (Modul 3 & Slide PPT CSS)
+   - Selector HTML/Tag: body, h1, h2, h3, p, ul, li, a, img, table, td, hr
+   - Grouping Selector: h1, h2, h3, h4
+   - Font Styling: font-family, font-size, font-weight, line-height, font-style
+   - Text Styling: color, text-align, text-decoration, text-transform, letter-spacing
+   ========================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Slide CSS: font-family, generic family, line-height, background-color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f0f3f8; /* Modul 4: background-color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Grouping Selector untuk Heading (Modul 3 & Slide CSS) */
+h1, h2, h3, h4 {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #1a2a6c;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 26px;
+    letter-spacing: 0.5px;
+}
+
+h2 {
+    font-size: 20px;
+    border-bottom: 2px solid #27ae60;
+    padding-bottom: 6px;
+    margin-top: 15px;
+}
+
+h3 {
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+p {
+    margin-bottom: 14px;
+    text-align: justify; /* Slide CSS: text-align */
+    color: #444444;
+}
+
+/* Redefinisi Tag Garis Horizontal (Modul 3) */
+hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 18px 0;
+}
+
+/* Link Style Dasar (Modul 5: a:link, a:visited, a:hover, a:active) */
+a {
+    color: #1a2a6c;
+    text-decoration: none;
+    transition: color 0.25s ease-in-out;
+}
+
+a:hover {
+    color: #27ae60;
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   2. STRUKTUR UTAMA / LAYOUT WRAPPER (Modul 5: Layout 2 & 3 Kolom)
+   - Selector ID: #wrapper, #header, #footer, #leftcolumn, #rightcolumn
+   ========================================================================== */
+
+#wrapper {
+    width: 1060px;
+    max-width: 96%;
+    margin: 25px auto; /* Modul 5: margin: auto untuk penataan tengah */
+    background-color: #ffffff;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08); /* Modul 6: box-shadow */
+    border-radius: 8px; /* Modul 6: border-radius */
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+/* Header Banner Website (Modul 4 & Modul 6: Linear Gradient) */
+#header {
+    background: #1b7506;
+    background: -webkit-linear-gradient(135deg, #1a2a6c 0%, #27ae60 100%);
+    background: -moz-linear-gradient(135deg, #1a2a6c 0%, #27ae60 100%);
+    background: linear-gradient(135deg, #1a2a6c 0%, #27ae60 100%); /* Modul 6: linear-gradient */
+    color: #ffffff;
+    padding: 24px 30px;
+    position: relative;
+}
+
+#header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    float: left;
+}
+
+#logo h1 {
+    color: #ffffff;
+    font-size: 28px;
+    margin-bottom: 4px;
+    text-transform: uppercase; /* Slide CSS: text-transform */
+    letter-spacing: 1px;
+}
+
+#logo p {
+    color: #e0f2fe;
+    font-size: 13px;
+    margin: 0;
+    font-style: italic; /* Slide CSS: font-style */
+}
+
+.header-badge {
+    float: right;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+/* ==========================================================================
+   3. SISTEM NAVIGASI & DROPDOWN MENU (Modul 5 & Modul 6)
+   - Menu Horizontal menggunakan <ul> dan <li>
+   - Submenu Dropdown dengan posisi absolute & hover effect
+   - Transition & Border Radius
+   ========================================================================== */
+
+#navbar-container {
+    background: #2c3e50;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid #27ae60;
+    position: relative;
+    z-index: 100; /* Modul 3: z-index layer */
+}
+
+#menu, 
+#menu li, 
+#menu ul, 
+#menu a {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+#menu {
+    list-style-type: none; /* Modul 5: list-style-type: none */
+    height: 44px;
+    background: #2c3e50;
+    background: linear-gradient(to bottom, #34495e 0%, #2c3e50 100%);
+    position: relative;
+}
+
+#menu li {
+    position: relative;
+    list-style: none;
+    float: left; /* Modul 5: float left untuk navigasi horizontal */
+    display: block;
+    height: 44px;
+}
+
+#menu li a {
+    display: block; /* Modul 5: display block agar seluruh area link dapat diklik */
+    padding: 0 22px;
+    line-height: 44px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    color: #f3f3f3;
+    text-transform: uppercase; /* Slide CSS: text-transform */
+    border-right: 1px solid #1a252f;
+    transition: background-color 0.25s ease, color 0.25s ease; /* Modul 6: transition */
+}
+
+/* State Hover & Active Menu (Modul 5 & 6) */
+#menu li a:hover,
+#menu li.active > a {
+    background-color: #27ae60;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Submenu Dropdown (Modul 6: Dropdown Navigasi) */
+#menu ul {
+    position: absolute;
+    top: 44px;
+    left: 0;
+    width: 190px;
+    background: #2c3e50;
+    display: none; /* Default tersembunyi */
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 5px 5px;
+    z-index: 999;
+}
+
+#menu ul li {
+    float: none;
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+#menu ul li a {
+    padding: 10px 16px;
+    line-height: 18px;
+    font-size: 12px;
+    text-transform: none;
+    color: #ecf0f1;
+    border-right: none;
+    border-bottom: 1px solid #34495e;
+}
+
+#menu ul li a:hover {
+    background-color: #27ae60;
+    color: #ffffff;
+    text-indent: 6px; /* Modul 6: text-indent animasi geser saat hover */
+}
+
+#menu ul li:last-child a {
+    border-bottom: none;
+}
+
+/* Menampilkan Submenu saat Hover pada Parent Li (Modul 6) */
+#menu li:hover > ul {
+    display: block;
+}
+
+/* ==========================================================================
+   4. KONTEN & SISTEM TATA LETAK MULTI-KOLOM (Modul 5)
+   - Layout 2 Kolom: #leftcolumn & #rightcolumn
+   - Layout 3 Kolom: #sidebar-kiri, #sidebar-tengah-atau-badan, #sidebar-kanan
+   ========================================================================== */
+
+.main-content {
+    padding: 25px;
+    min-height: 520px;
+    background-color: #ffffff;
+}
+
+/* Clearfix Helper untuk Float (Modul 5) */
+.clearfix::after,
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Layout 2 Kolom (Modul 5 Layout) */
+#leftcolumn {
+    float: left;
+    width: 310px;
+    padding: 15px;
+    background-color: #f8fafc;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+}
+
+#rightcolumn {
+    margin-left: 335px;
+    padding: 10px 15px;
+}
+
+/* Layout 3 Kolom (Modul 5 Layout) */
+#sidebar-kiri {
+    float: left;
+    width: 250px;
+    padding: 15px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    min-height: 480px;
+}
+
+#sidebar-tengah-atau-badan {
+    float: left;
+    width: 480px;
+    margin: 0 15px;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    min-height: 480px;
+}
+
+#sidebar-kanan {
+    float: right;
+    width: 230px;
+    padding: 15px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    min-height: 480px;
+}
+
+/* ==========================================================================
+   5. PENGATURAN GAMBAR & PROFIL (Modul 4: CSS Image)
+   - Image border, width, height, opacity, hover transition
+   ========================================================================== */
+
+.profile-card {
+    text-align: center;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.profile-img-container {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 12px auto;
+}
+
+/* Styling Gambar sesuai Modul 4 */
+.profile-img {
+    width: 140px; /* Modul 4: width */
+    height: 140px; /* Modul 4: height */
+    object-fit: cover; /* Menjaga proporsi foto */
+    object-position: top center; /* Fokus pada area wajah */
+    border: 3px solid #27ae60; /* Modul 4: border solid */
+    border-radius: 50%; /* Modul 6: border-radius lingkaran */
+    opacity: 0.95; /* Modul 4: opacity */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Modul 6: transition */
+    display: block;
+}
+
+/* Efek Hover Gambar (Modul 4: img:hover opacity) */
+.profile-img:hover {
+    opacity: 1.0;
+    transform: scale(1.04);
+}
+
+.profile-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1a2a6c;
+    margin-bottom: 2px;
+}
+
+.profile-title {
+    font-size: 12px;
+    color: #7f8c8d;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+/* ==========================================================================
+   6. CARD & HIGHLIGHT KEAHLIAN (HTML, PHP, C++)
+   - Modul 3: Selector Class
+   - Modul 4: Background Image & Icon Box
+   - Modul 6: Box-shadow & Border Radius
+   ========================================================================== */
+
+.section-title {
+    font-size: 20px;
+    color: #1a2a6c;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.skills-grid {
+    margin-top: 15px;
+}
+
+.skill-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #27ae60;
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin-bottom: 14px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.skill-card.cpp-card {
+    border-left-color: #00599c; /* C++ Blue */
+}
+
+.skill-card.php-card {
+    border-left-color: #777bb4; /* PHP Purple */
+}
+
+.skill-card.html-card {
+    border-left-color: #e44d26; /* HTML Orange */
+}
+
+.skill-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.skill-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+    float: left;
+}
+
+.skill-name {
+    font-size: 15px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.skill-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-left: 8px;
+}
+
+.badge-cpp { background-color: #00599c; }
+.badge-php { background-color: #777bb4; }
+.badge-html { background-color: #e44d26; }
+
+/* Modul 3: Selector Class Headline, Sublines, Infotext */
+.headlines {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #1a2a6c;
+    font-weight: bold;
+}
+
+.sublines {
+    font-size: 13px;
+    color: #555555;
+}
+
+.infotext {
+    font-size: 12px;
+    color: #777777;
+    font-style: italic;
+}
+
+/* ==========================================================================
+   7. TIMELINE RIWAYAT PENDIDIKAN (About Page)
+   - Menampilkan riwayat sekolah 2011 sampai Sekarang (UNM)
+   ========================================================================== */
+
+.timeline-list {
+    list-style-type: none;
+    position: relative;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.timeline-list::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 4px;
+    width: 2px;
+    background: #cbd5e1;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #27ae60;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 0 2px #27ae60;
+}
+
+.timeline-item.active::before {
+    background: #e74c3c;
+    box-shadow: 0 0 0 2px #e74c3c;
+}
+
+.timeline-year {
+    font-size: 12px;
+    font-weight: bold;
+    color: #27ae60;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+.timeline-item.active .timeline-year {
+    color: #e74c3c;
+}
+
+.timeline-school {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1a2a6c;
+}
+
+.timeline-desc {
+    font-size: 12px;
+    color: #666666;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+/* ==========================================================================
+   8. FORMULIR KONTAK (Modul 3 & 6: Form Styling & Buttons)
+   - Styling Table, Input, Textarea, Button
+   ========================================================================== */
+
+.contact-box {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-label {
+    display: block;
+    font-weight: bold;
+    font-size: 13px;
+    color: #2c3e50;
+    margin-bottom: 6px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 14px;
+    font-family: inherit;
+    font-size: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    background-color: #f8fafc;
+    transition: border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #27ae60;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.15);
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 110px;
+}
+
+/* Tombol / Button (Modul 6: .dropbtn / .btn styling) */
+.btn {
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    background-color: #27ae60;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.25s ease, transform 0.2s ease;
+    box-shadow: 0 2px 6px rgba(39, 174, 96, 0.3);
+}
+
+.btn:hover {
+    background-color: #219150;
+    color: #ffffff;
+    text-decoration: none;
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background-color: #34495e;
+    box-shadow: 0 2px 6px rgba(52, 73, 94, 0.3);
+}
+
+.btn-secondary:hover {
+    background-color: #2c3e50;
+}
+
+/* Info List & Table (Modul 3 Table Styling) */
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+.info-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.info-table td.label-col {
+    font-weight: bold;
+    color: #2c3e50;
+    width: 35%;
+}
+
+/* ==========================================================================
+   9. FOOTER (Modul 5: .footer & ID #footer)
+   - text-align: center, font-size, padding
+   ========================================================================== */
+
+#footer {
+    background-color: #1a252f;
+    color: #bdc3c7;
+    padding: 22px 25px;
+    text-align: center; /* Modul 5: text-align: center */
+    font-size: 12px;
+    border-top: 3px solid #27ae60;
+    clear: both; /* Modul 5: clear both untuk membersihkan float */
+}
+
+#footer p {
+    color: #bdc3c7;
+    text-align: center;
+    margin: 3px 0;
+}
+
+#footer a {
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+#footer a:hover {
+    color: #ffffff;
+}
+
+.footer-links {
+    margin-top: 8px;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    font-size: 12px;
+}

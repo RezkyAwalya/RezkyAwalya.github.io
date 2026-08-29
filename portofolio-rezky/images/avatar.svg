@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gradBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3c72;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a5298;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradShirt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d6efd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0b5ed7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="96" fill="url(#gradBg)" stroke="#ffffff" stroke-width="4"/>
+  
+  <!-- Person Graphic -->
+  <!-- Body/Shoulders -->
+  <path d="M40 185 C40 145, 70 130, 100 130 C130 130, 160 145, 160 185 Z" fill="url(#gradShirt)"/>
+  <path d="M85 130 L100 155 L115 130 Z" fill="#ffffff" opacity="0.9"/>
+  <!-- Neck -->
+  <rect x="88" y="110" width="24" height="25" rx="5" fill="#f5d0b5"/>
+  <!-- Head -->
+  <ellipse cx="100" cy="85" rx="35" ry="42" fill="#fcdbbd"/>
+  <!-- Hair -->
+  <path d="M65 80 C65 50, 80 40, 100 40 C120 40, 135 50, 135 80 C135 62, 125 55, 100 55 C75 55, 65 65, 65 80 Z" fill="#2c3e50"/>
+  <!-- Glasses -->
+  <circle cx="85" cy="82" r="12" fill="none" stroke="#2c3e50" stroke-width="3"/>
+  <circle cx="115" cy="82" r="12" fill="none" stroke="#2c3e50" stroke-width="3"/>
+  <line x1="97" y1="82" x2="103" y2="82" stroke="#2c3e50" stroke-width="3"/>
+  <!-- Eyes -->
+  <circle cx="85" cy="82" r="3" fill="#2c3e50"/>
+  <circle cx="115" cy="82" r="3" fill="#2c3e50"/>
+  <!-- Smile -->
+  <path d="M90 102 Q100 112 110 102" fill="none" stroke="#d35400" stroke-width="3" stroke-linecap="round"/>
+  <!-- Decorative Tech Spark -->
+  <circle cx="150" cy="55" r="4" fill="#00d2ff"/>
+  <circle cx="45" cy="130" r="3" fill="#00d2ff"/>
+</svg>

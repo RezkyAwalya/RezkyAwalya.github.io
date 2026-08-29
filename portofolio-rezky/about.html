@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Saya & Riwayat Pendidikan - Rezky Awalya | Teknik Komputer UNM</title>
+    <!-- Pemanggilan File CSS Eksternal (Modul 3 & Slide CSS) -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+
+    <!-- Wrapper Dokumen (Modul 5 Layout) -->
+    <div id="wrapper">
+        
+        <!-- Header Website (Modul 4 & 6) -->
+        <div id="header">
+            <div id="header-content" class="clearfix">
+                <div id="logo">
+                    <h1>Rezky Awalya</h1>
+                    <p>Mahasiswa Teknik Komputer | Universitas Negeri Makassar</p>
+                </div>
+                <div class="header-badge">
+                    Profil & Riwayat Pendidikan
+                </div>
+            </div>
+        </div>
+
+        <!-- Sistem Navigasi Bar & Dropdown (Modul 5 & 6) -->
+        <div id="navbar-container">
+            <ul id="menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li class="active">
+                    <a href="about.html">Tentang Saya &#9662;</a>
+                    <ul>
+                        <li><a href="#biodata">Biodata Diri</a></li>
+                        <li><a href="#pendidikan">Riwayat Pendidikan</a></li>
+                        <li><a href="#keahlian">Keahlian & Target</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </div>
+
+        <!-- Konten Utama: Menggunakan Layout 3 Kolom (Modul 5 Layout 3 Kolom) -->
+        <div class="main-content">
+            <div class="clearfix">
+                
+                <!-- 1. Sidebar Kiri: Biodata Pribadi (Modul 5: #sidebar-kiri) -->
+                <div id="sidebar-kiri">
+                    <div id="biodata">
+                        <h2 style="font-size: 16px; margin-top: 0;">Biodata Diri</h2>
+                        <div style="text-align: center; margin-bottom: 12px;">
+                            <img src="images/avatar.jpg" alt="Foto Profil Rezky" class="profile-img" style="width: 100px; height: 100px; margin: 0 auto;">
+                        </div>
+                        <table class="info-table" style="font-size: 12px;">
+                            <tr>
+                                <td class="label-col">Nama:</td>
+                                <td>Rezky Awalya</td>
+                            </tr>
+                            <tr>
+                                <td class="label-col">Prodi:</td>
+                                <td>Teknik Komputer</td>
+                            </tr>
+                            <tr>
+                                <td class="label-col">Jurusan:</td>
+                                <td>JTIK UNM</td>
+                            </tr>
+                            <tr>
+                                <td class="label-col">Jenjang:</td>
+                                <td>S1 (Semester 3)</td>
+                            </tr>
+                            <tr>
+                                <td class="label-col">Domisili:</td>
+                                <td>Makassar, Sulsel</td>
+                            </tr>
+                        </table>
+
+                        <hr>
+                        <h3 style="font-size: 14px;">Minat & Fokus</h3>
+                        <p class="sublines" style="font-size: 12px;">
+                            &bull; Perancangan Sistem Komputer<br>
+                            &bull; Pemrograman C++ & Algoritma<br>
+                            &bull; Pemrograman Web (HTML & PHP)<br>
+                            &bull; Jaringan & Arsitektur Komputer
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 2. Sidebar Tengah/Badan: Riwayat Pendidikan Lengkap 2011 - Sekarang (Modul 5: #sidebar-tengah-atau-badan) -->
+                <div id="sidebar-tengah-atau-badan">
+                    <div id="pendidikan">
+                        <h2 style="margin-top: 0;">Riwayat Pendidikan</h2>
+                        <p class="sublines">
+                            Perjalanan dan rekam jejak jenjang pendidikan formal yang telah saya tempuh dari tahun 2011 hingga saat ini:
+                        </p>
+
+                        <!-- Timeline Pendidikan (Modul 3 Selector Class & Modul 4) -->
+                        <ul class="timeline-list">
+                            
+                            <!-- 2025 - Sekarang: UNM -->
+                            <li class="timeline-item active">
+                                <div class="timeline-year">2025 — Sekarang</div>
+                                <div class="timeline-school">Universitas Negeri Makassar (UNM)</div>
+                                <p class="timeline-desc">
+                                    <strong>Jurusan:</strong> Teknik Informatika & Komputer (JTIK)<br>
+                                    <strong>Program Studi:</strong> S1 Teknik Komputer (Semester 3)
+                                </p>
+                            </li>
+
+                            <!-- 2022 - 2025: SMK Negeri 7 Makassar -->
+                            <li class="timeline-item">
+                                <div class="timeline-year">2022 — 2025</div>
+                                <div class="timeline-school">SMK Negeri 7 Makassar</div>
+                                <p class="timeline-desc">
+                                    Sekolah Menengah Kejuruan (SMK)
+                                </p>
+                            </li>
+
+                            <!-- 2020 - 2022: SMP Negeri 10 Makassar -->
+                            <li class="timeline-item">
+                                <div class="timeline-year">2020 — 2022</div>
+                                <div class="timeline-school">SMP Negeri 10 Makassar</div>
+                                <p class="timeline-desc">
+                                    Sekolah Menengah Pertama (SMP)
+                                </p>
+                            </li>
+
+                            <!-- 2019 - 2020: Pondok Pesantren Nahdlatul Ulum, Maros -->
+                            <li class="timeline-item">
+                                <div class="timeline-year">2019 — 2020</div>
+                                <div class="timeline-school">Pondok Pesantren Nahdlatul Ulum, Maros</div>
+                                <p class="timeline-desc">
+                                    Madrasah Tsanawiyah (MTs)
+                                </p>
+                            </li>
+
+                            <!-- 2014 - 2019: SD Negeri 67/1 Rappokalling -->
+                            <li class="timeline-item">
+                                <div class="timeline-year">2014 — 2019</div>
+                                <div class="timeline-school">SD Negeri 67/1 Rappokalling</div>
+                                <p class="timeline-desc">
+                                    Sekolah Dasar (SD)
+                                </p>
+                            </li>
+
+                            <!-- 2013 - 2014: SD Negeri Pontiku 1 -->
+                            <li class="timeline-item">
+                                <div class="timeline-year">2013 — 2014</div>
+                                <div class="timeline-school">SD Negeri Pontiku 1</div>
+                                <p class="timeline-desc">
+                                    Sekolah Dasar (SD)
+                                </p>
+                            </li>
+
+                            <!-- 2011 - 2013: TK Tunas Muda, Rappokalling -->
+                            <li class="timeline-item">
+                                <div class="timeline-year">2011 — 2013</div>
+                                <div class="timeline-school">TK Tunas Muda, Rappokalling</div>
+                                <p class="timeline-desc">
+                                    Taman Kanak-Kanak (TK)
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 3. Sidebar Kanan: Target 2-3 Tahun & Penguasaan Skill (Modul 5: #sidebar-kanan) -->
+                <div id="sidebar-kanan">
+                    <div id="keahlian">
+                        <h2 style="font-size: 16px; margin-top: 0;">Target 2-3 Tahun</h2>
+                        <div style="background-color: #ffffff; border: 1px solid #e2e8f0; padding: 10px; border-radius: 5px; margin-bottom: 15px;">
+                            <p class="infotext" style="font-size: 11px; margin-bottom: 6px; font-weight: bold; color: #1a2a6c;">
+                                Target Akademik & Karir:
+                            </p>
+                            <ul style="padding-left: 15px; font-size: 12px; color: #444444; line-height: 1.5;">
+                                <li>Menuntaskan studi S1 Teknik Komputer UNM dengan predikat Cumlaude.</li>
+                                <li>Memperdalam kemampuan sistem terdistribusi & arsitektur komputer.</li>
+                                <li>Membangun aplikasi web full-stack berbasis PHP modern dan C++.</li>
+                                <li>Mengikuti sertifikasi dan publikasi riset bidang rekayasa komputer.</li>
+                            </ul>
+                        </div>
+
+                        <hr>
+                        <h3 style="font-size: 14px;">Bahasa Dikuasai</h3>
+                        
+                        <div style="margin-top: 10px;">
+                            <strong style="font-size: 12px; color: #00599c;">&bull; C++</strong>
+                            <div style="background: #e2e8f0; height: 6px; border-radius: 3px; margin: 4px 0 10px 0;">
+                                <div style="background: #00599c; height: 100%; width: 80%; border-radius: 3px;"></div>
+                            </div>
+
+                            <strong style="font-size: 12px; color: #777bb4;">&bull; PHP</strong>
+                            <div style="background: #e2e8f0; height: 6px; border-radius: 3px; margin: 4px 0 10px 0;">
+                                <div style="background: #777bb4; height: 100%; width: 75%; border-radius: 3px;"></div>
+                            </div>
+
+                            <strong style="font-size: 12px; color: #e44d26;">&bull; HTML & CSS</strong>
+                            <div style="background: #e2e8f0; height: 6px; border-radius: 3px; margin: 4px 0 10px 0;">
+                                <div style="background: #e44d26; height: 100%; width: 85%; border-radius: 3px;"></div>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 20px;">
+                            <a href="contact.html" class="btn" style="width: 100%; font-size: 11px; text-align: center; display: block;">Kirim Pesan</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer Website (Modul 5 Layout) -->
+        <div id="footer">
+            <p>&copy; 2026 <strong>Rezky Awalya</strong>. Portofolio Mahasiswa S1 Teknik Komputer.</p>
+            <p>Jurusan Teknik Informatika & Komputer (JTIK) &bull; Fakultas Teknik &bull; Universitas Negeri Makassar (UNM)</p>
+            <div class="footer-links">
+                <a href="index.html">Beranda</a> |
+                <a href="about.html">Tentang Saya</a> |
+                <a href="contact.html">Kontak</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

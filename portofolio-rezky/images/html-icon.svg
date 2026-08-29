@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <!-- HTML5 Shield Icon -->
+  <polygon points="15,5 85,5 78,85 50,95 22,85" fill="#E44D26"/>
+  <polygon points="50,12 50,88 72,80 78,12" fill="#F16529"/>
+  <!-- H letter / Tag symbol -->
+  <path d="M30 25 L40 25 L40 45 L60 45 L60 25 L70 25 L70 75 L60 75 L60 55 L40 55 L40 75 L30 75 Z" fill="#ffffff"/>
+</svg>

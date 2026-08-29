@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Pribadi - Rezky Awalya | Teknik Komputer UNM</title>
+    <!-- Pemanggilan File CSS Eksternal (Modul 3, Modul 4, Modul 6, Slide CSS) -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+
+    <!-- Struktur Utama Menggunakan ID #wrapper (Modul 5 Layout) -->
+    <div id="wrapper">
+        
+        <!-- Header Website dengan Gradient (Modul 4 & Modul 6) -->
+        <div id="header">
+            <div id="header-content" class="clearfix">
+                <div id="logo">
+                    <h1>Rezky Awalya</h1>
+                    <p>Mahasiswa Teknik Komputer | Universitas Negeri Makassar</p>
+                </div>
+                <div class="header-badge">
+                    Semester 3 - JTIK UNM
+                </div>
+            </div>
+        </div>
+
+        <!-- Sistem Navigasi Bar & Dropdown Menu (Modul 5 & Modul 6) -->
+        <div id="navbar-container">
+            <ul id="menu">
+                <li class="active"><a href="index.html">Beranda</a></li>
+                <li>
+                    <a href="about.html">Tentang Saya &#9662;</a>
+                    <!-- Submenu Dropdown (Modul 6) -->
+                    <ul>
+                        <li><a href="about.html#biodata">Biodata Diri</a></li>
+                        <li><a href="about.html#pendidikan">Riwayat Pendidikan</a></li>
+                        <li><a href="about.html#keahlian">Keahlian Bahasa</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </div>
+
+        <!-- Konten Utama: Menggunakan Layout 2 Kolom (Modul 5 Layout) -->
+        <div class="main-content">
+            <div class="clearfix">
+                
+                <!-- Kolom Kiri: Profil & Quick Info (Modul 5: #leftcolumn) -->
+                <div id="leftcolumn">
+                    <div class="profile-card">
+                        <div class="profile-img-container">
+                            <!-- Image Styling dengan Border, Opacity & Hover (Modul 4: CSS Image) -->
+                            <img src="images/avatar.jpg" alt="Foto Profil Rezky Awalya" class="profile-img">
+                        </div>
+                        <h2 class="profile-name">Rezky Awalya</h2>
+                        <p class="profile-title">Computer Engineering Student</p>
+                        <hr>
+                        <table class="info-table">
+                            <tr>
+                                <td class="label-col">Kampus:</td>
+                                <td>UNM Makassar</td>
+                            </tr>
+                            <tr>
+                                <td class="label-col">Jurusan:</td>
+                                <td>JTIK</td>
+                            </tr>
+                            <tr>
+                                <td class="label-col">Prodi:</td>
+                                <td>Teknik Komputer</td>
+                            </tr>
+                            <tr>
+                                <td class="label-col">Semester:</td>
+                                <td>Semester 3</td>
+                            </tr>
+                            <tr>
+                                <td class="label-col">Status:</td>
+                                <td><span style="color:#27ae60; font-weight:bold;">Aktif</span></td>
+                            </tr>
+                        </table>
+                        <div style="margin-top: 15px;">
+                            <a href="contact.html" class="btn" style="width: 100%; text-align: center; display: block;">Hubungi Saya</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kolom Kanan: Pengenalan & Highlight Keahlian (Modul 5: #rightcolumn) -->
+                <div id="rightcolumn">
+                    <span class="headlines">Selamat Datang di Portofolio Saya!</span>
+                    <p style="margin-top: 10px;">
+                        Halo! Saya <strong>Rezky Awalya</strong>, seorang mahasiswa semester 3 pada program studi 
+                        <strong>Teknik Komputer</strong>, Jurusan Teknik Informatika & Komputer (JTIK), 
+                        <strong>Universitas Negeri Makassar (UNM)</strong>. Saya memiliki minat mendalam di bidang 
+                        pemrograman sistem, perancangan perangkat lunak, serta pengembangan web.
+                    </p>
+                    <p>
+                        Website portofolio ini dibangun menggunakan pemisahan struktur dokumen HTML dan lembar gaya 
+                        eksternal (CSS) sesuai standar pemrograman web modern, mengimplementasikan konsep selector, 
+                        tata letak multi-kolom (float layout), navigasi bertingkat (dropdown menu), dan efek interaktif.
+                    </p>
+
+                    <!-- Section Keahlian Pemrograman yang Dikuasai (C++, PHP, HTML) -->
+                    <h2 class="section-title">Bahasa Pemrograman & Keahlian yang Dikuasai</h2>
+                    <p class="sublines">
+                        Berikut adalah bahasa dan teknologi yang telah saya pelajari dan terapkan dalam tugas maupun proyek akademik:
+                    </p>
+
+                    <div class="skills-grid">
+                        
+                        <!-- Skill 1: C++ -->
+                        <div class="skill-card cpp-card clearfix">
+                            <img src="images/cpp-icon.svg" alt="C++" class="skill-icon">
+                            <div>
+                                <div class="skill-name">
+                                    C++ (C Plus Plus)
+                                    <span class="skill-badge badge-cpp">Tingkat Menengah</span>
+                                </div>
+                                <p class="sublines" style="margin-bottom: 0;">
+                                    Bahasa utama untuk memahami algoritma, struktur data, pemrograman berorientasi objek (OOP), 
+                                    serta manipulasi memori dan sistem tingkat rendah pada perkuliahan Teknik Komputer.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Skill 2: PHP -->
+                        <div class="skill-card php-card clearfix">
+                            <img src="images/php-icon.svg" alt="PHP" class="skill-icon">
+                            <div>
+                                <div class="skill-name">
+                                    PHP (Hypertext Preprocessor)
+                                    <span class="skill-badge badge-php">Pemrograman Web</span>
+                                </div>
+                                <p class="sublines" style="margin-bottom: 0;">
+                                    Digunakan dalam pemrosesan backend web dinamis, logika server-side, pengolahan form, 
+                                    dan pengolahan data pada praktikum pemrograman web.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Skill 3: HTML -->
+                        <div class="skill-card html-card clearfix">
+                            <img src="images/html-icon.svg" alt="HTML" class="skill-icon">
+                            <div>
+                                <div class="skill-name">
+                                    HTML (HyperText Markup Language) & CSS
+                                    <span class="skill-badge badge-html">Frontend Dasar</span>
+                                </div>
+                                <p class="sublines" style="margin-bottom: 0;">
+                                    Membangun struktur semantik halaman web, form interaktif, penyusunan tabel, 
+                                    serta pengaturan tampilan grafis yang responsif menggunakan Cascading Style Sheets.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Call to Action Box -->
+                    <div style="background-color: #f1f8f5; border: 1px dashed #27ae60; padding: 14px 18px; border-radius: 6px; margin-top: 20px;">
+                        <p style="margin-bottom: 8px; font-weight: bold; color: #1a2a6c;">
+                            Ingin mengetahui riwayat pendidikan dan profil lengkap saya?
+                        </p>
+                        <p class="infotext" style="margin-bottom: 12px;">
+                            Jelajahi rekam jejak pendidikan saya dari tahun 2011 hingga berkuliah di Universitas Negeri Makassar.
+                        </p>
+                        <a href="about.html" class="btn">Lihat Riwayat Pendidikan &raquo;</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer Website (Modul 5 Layout) -->
+        <div id="footer">
+            <p>&copy; 2026 <strong>Rezky Awalya</strong>. Portofolio Mahasiswa S1 Teknik Komputer.</p>
+            <p>Jurusan Teknik Informatika & Komputer (JTIK) &bull; Fakultas Teknik &bull; Universitas Negeri Makassar (UNM)</p>
+            <div class="footer-links">
+                <a href="index.html">Beranda</a> |
+                <a href="about.html">Tentang Saya</a> |
+                <a href="contact.html">Kontak</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

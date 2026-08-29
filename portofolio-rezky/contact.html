@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Rezky Awalya | Teknik Komputer UNM</title>
+    <!-- Pemanggilan File CSS Eksternal (Modul 3, 4, 6 & Slide CSS) -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+
+    <!-- Wrapper Dokumen (Modul 5 Layout) -->
+    <div id="wrapper">
+        
+        <!-- Header Website (Modul 4 & 6) -->
+        <div id="header">
+            <div id="header-content" class="clearfix">
+                <div id="logo">
+                    <h1>Rezky Awalya</h1>
+                    <p>Mahasiswa Teknik Komputer | Universitas Negeri Makassar</p>
+                </div>
+                <div class="header-badge">
+                    Hubungi Saya
+                </div>
+            </div>
+        </div>
+
+        <!-- Sistem Navigasi Bar & Dropdown (Modul 5 & 6) -->
+        <div id="navbar-container">
+            <ul id="menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li>
+                    <a href="about.html">Tentang Saya &#9662;</a>
+                    <ul>
+                        <li><a href="about.html#biodata">Biodata Diri</a></li>
+                        <li><a href="about.html#pendidikan">Riwayat Pendidikan</a></li>
+                        <li><a href="about.html#keahlian">Keahlian Bahasa</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="contact.html">Kontak</a></li>
+            </ul>
+        </div>
+
+        <!-- Konten Utama: Menggunakan Layout 2 Kolom (Modul 5 Layout) -->
+        <div class="main-content">
+            <div class="clearfix">
+                
+                <!-- Kolom Kiri: Informasi Kontak & Lokasi Kampus (Modul 5: #leftcolumn) -->
+                <div id="leftcolumn">
+                    <h2 style="font-size: 16px; margin-top: 0;">Informasi Kontak</h2>
+                    <p class="sublines">
+                        Jika Anda ingin berdiskusi mengenai proyek pemrograman web, tugas akademik, atau kolaborasi bidang Teknik Komputer, silakan hubungi saya:
+                    </p>
+
+                    <table class="info-table" style="margin-top: 10px;">
+                        <tr>
+                            <td class="label-col">Email:</td>
+                            <td><a href="mailto:awalyarezky17@gmail.com">awalyarezky17@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                            <td class="label-col">Lokasi:</td>
+                            <td>Makassar, Sulawesi Selatan</td>
+                        </tr>
+                        <tr>
+                            <td class="label-col">Kampus:</td>
+                            <td>Universitas Negeri Makassar (UNM) Parangtambung</td>
+                        </tr>
+                        <tr>
+                            <td class="label-col">Fakultas:</td>
+                            <td>Fakultas Teknik (FT)</td>
+                        </tr>
+                        <tr>
+                            <td class="label-col">Jurusan:</td>
+                            <td>JTIK - Teknik Komputer</td>
+                        </tr>
+                    </table>
+
+                    <hr>
+                    <h3 style="font-size: 14px;">Media Sosial & Jaringan</h3>
+                    <ul style="list-style-type: none; padding-left: 0; line-height: 2; font-size: 13px;">
+                        <li>&#127760; <strong>GitHub:</strong> <a href="RezkyAwalya.github.io">RezkyAwalya.github.io</a></li>
+                        <li>&#128241; <strong>WhatsApp:</strong> <a href="#">08 2345 95 2007</a></li>
+                        <li>&#128247; <strong>Instagram:</strong> <a href="https://www.instagram.com/alrooms_?igsi=MW5oeXQ5YWl4Z2FybQ==">@alrooms_</a></li>
+                    </ul>
+
+                    <div style="margin-top: 15px; padding: 12px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 5px;">
+                        <p class="infotext" style="margin-bottom: 0;">
+                            <strong>Ketersediaan:</strong> Terbuka untuk diskusi akademik dan proyek praktikum kolaboratif.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Kolom Kanan: Formulir Pengiriman Pesan (Modul 3 & Modul 6 Form Control) -->
+                <div id="rightcolumn">
+                    <span class="headlines">Kirim Pesan / Masukan</span>
+                    <p style="margin-top: 8px;" class="sublines">
+                        Silakan isi formulir di bawah ini untuk mengirimkan pesan atau pertanyaan kepada saya.
+                    </p>
+
+                    <div class="contact-box" style="margin-top: 15px;">
+                        <form action="#" method="POST" onsubmit="alert('Terima kasih! Pesan Anda telah berhasil disimulasikan terkirim.'); return false;">
+                            
+                            <div class="form-group">
+                                <label for="nama" class="form-label">Nama Lengkap:</label>
+                                <input type="text" id="nama" name="nama" class="form-control" placeholder="Masukkan nama lengkap Anda" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Alamat Email:</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="nama@domain.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subjek" class="form-label">Subjek Pesan:</label>
+                                <input type="text" id="subjek" name="subjek" class="form-control" placeholder="Topik atau keperluan pesan" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="pesan" class="form-label">Isi Pesan:</label>
+                                <textarea id="pesan" name="pesan" class="form-control" placeholder="Tuliskan pesan atau pertanyaan Anda di sini..." required></textarea>
+                            </div>
+
+                            <div style="margin-top: 20px;">
+                                <button type="submit" class="btn">Kirim Pesan</button>
+                                <button type="reset" class="btn btn-secondary" style="margin-left: 8px;">Reset Formulir</button>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer Website (Modul 5 Layout) -->
+        <div id="footer">
+            <p>&copy; 2026 <strong>Rezky Awalya</strong>. Portofolio Mahasiswa S1 Teknik Komputer.</p>
+            <p>Jurusan Teknik Informatika & Komputer (JTIK) &bull; Fakultas Teknik &bull; Universitas Negeri Makassar (UNM)</p>
+            <div class="footer-links">
+                <a href="index.html">Beranda</a> |
+                <a href="about.html">Tentang Saya</a> |
+                <a href="contact.html">Kontak</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

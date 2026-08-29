@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <!-- UNM Badge Graphic -->
+  <circle cx="50" cy="50" r="46" fill="#FDB813" stroke="#D32F2F" stroke-width="4"/>
+  <circle cx="50" cy="50" r="38" fill="#D32F2F"/>
+  <polygon points="50,20 58,38 78,38 62,50 68,68 50,56 32,68 38,50 22,38 42,38" fill="#FDB813"/>
+  <text x="50" y="85" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">UNM</text>
+</svg>
