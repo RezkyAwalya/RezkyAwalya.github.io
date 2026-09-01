@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang Saya & Riwayat Pendidikan - Rezky Awalya | Teknik Komputer UNM</title>
+    <title>Tentang Saya, Riwayat Pendidikan, Organisasi, Prestasi & Proyek - Rezky Awalya | Teknik Komputer UNM</title>
     <!-- Pemanggilan File CSS Eksternal (Modul 3 & Slide CSS) -->
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
@@ -12,7 +12,7 @@
     <!-- Wrapper Dokumen (Modul 5 Layout) -->
     <div id="wrapper">
         
-        <!-- Header Website (Modul 4 & 6) -->
+        <!-- Header Website (Modul 4 & 6: Linear Gradient) -->
         <div id="header">
             <div id="header-content" class="clearfix">
                 <div id="logo">
@@ -20,7 +20,7 @@
                     <p>Mahasiswa Teknik Komputer | Universitas Negeri Makassar</p>
                 </div>
                 <div class="header-badge">
-                    Profil & Riwayat Pendidikan
+                    Profil, Prestasi & Portofolio
                 </div>
             </div>
         </div>
@@ -34,7 +34,9 @@
                     <ul>
                         <li><a href="#biodata">Biodata Diri</a></li>
                         <li><a href="#pendidikan">Riwayat Pendidikan</a></li>
-                        <li><a href="#keahlian">Keahlian & Target</a></li>
+                        <li><a href="#prestasi">Prestasi & Juara</a></li>
+                        <li><a href="#organisasi">Pengalaman Organisasi</a></li>
+                        <li><a href="#proyek">Proyek Desain</a></li>
                     </ul>
                 </li>
                 <li><a href="contact.html">Kontak</a></li>
@@ -45,12 +47,13 @@
         <div class="main-content">
             <div class="clearfix">
                 
-                <!-- 1. Sidebar Kiri: Biodata Pribadi (Modul 5: #sidebar-kiri) -->
+                <!-- 1. Sidebar Kiri: Biodata Pribadi & Tautan Cepat (Modul 5: #sidebar-kiri) -->
                 <div id="sidebar-kiri">
                     <div id="biodata">
                         <h2 style="font-size: 16px; margin-top: 0;">Biodata Diri</h2>
                         <div style="text-align: center; margin-bottom: 12px;">
-                            <img src="images/avatar.jpg" alt="Foto Profil Rezky" class="profile-img" style="width: 100px; height: 100px; margin: 0 auto;">
+                            <!-- Foto Profil dengan Efek Border, Shadow & Opacity (Modul 4 & 6) -->
+                            <img src="images/avatar.jpg" alt="Foto Profil Rezky Awalya" class="profile-img" style="width: 110px; height: 110px; margin: 0 auto;">
                         </div>
                         <table class="info-table" style="font-size: 12px;">
                             <tr>
@@ -76,27 +79,36 @@
                         </table>
 
                         <hr>
+                        <h3 style="font-size: 14px;">Daftar Isi Halaman</h3>
+                        <ul style="list-style-type: none; padding-left: 0; font-size: 12px; line-height: 2.1;">
+                            <li>&bull; <a href="#pendidikan">&#127891; Riwayat Pendidikan</a></li>
+                            <li>&bull; <a href="#prestasi">&#127942; Prestasi & Penghargaan</a></li>
+                            <li>&bull; <a href="#organisasi">&#128101; Pengalaman Organisasi</a></li>
+                            <li>&bull; <a href="#proyek">&#127912; Portofolio Proyek Desain</a></li>
+                        </ul>
+
+                        <hr>
                         <h3 style="font-size: 14px;">Minat & Fokus</h3>
-                        <p class="sublines" style="font-size: 12px;">
-                            &bull; Perancangan Sistem Komputer<br>
-                            &bull; Pemrograman C++ & Algoritma<br>
-                            &bull; Pemrograman Web (HTML & PHP)<br>
-                            &bull; Jaringan & Arsitektur Komputer
+                        <p class="sublines" style="font-size: 12px; margin-bottom: 0;">
+                            &bull; Rekayasa Sistem Komputer<br>
+                            &bull; UI/UX & Graphic Design<br>
+                            &bull; Pemrograman C++, PHP & Web<br>
+                            &bull; Public Speaking & Debat
                         </p>
                     </div>
                 </div>
 
-                <!-- 2. Sidebar Tengah/Badan: Riwayat Pendidikan Lengkap 2011 - Sekarang (Modul 5: #sidebar-tengah-atau-badan) -->
+                <!-- 2. Kolom Tengah: Riwayat Pendidikan, Prestasi, Organisasi & Proyek (Modul 5: #sidebar-tengah-atau-badan) -->
                 <div id="sidebar-tengah-atau-badan">
+                    
+                    <!-- BAGIAN 1: RIWAYAT PENDIDIKAN -->
                     <div id="pendidikan">
-                        <h2 style="margin-top: 0;">Riwayat Pendidikan</h2>
+                        <h2 style="margin-top: 0;">&#127891; Riwayat Pendidikan</h2>
                         <p class="sublines">
-                            Perjalanan dan rekam jejak jenjang pendidikan formal yang telah saya tempuh dari tahun 2011 hingga saat ini:
+                            Rekam jejak jenjang pendidikan formal yang telah saya tempuh dari tahun 2011 hingga berkuliah di UNM:
                         </p>
 
-                        <!-- Timeline Pendidikan (Modul 3 Selector Class & Modul 4) -->
                         <ul class="timeline-list">
-                            
                             <!-- 2025 - Sekarang: UNM -->
                             <li class="timeline-item active">
                                 <div class="timeline-year">2025 — Sekarang</div>
@@ -112,7 +124,7 @@
                                 <div class="timeline-year">2022 — 2025</div>
                                 <div class="timeline-school">SMK Negeri 7 Makassar</div>
                                 <p class="timeline-desc">
-                                    Sekolah Menengah Kejuruan (SMK)
+                                    Sekolah Menengah Kejuruan (SMK) — Rekayasa Perangkat Lunak (RPL)
                                 </p>
                             </li>
 
@@ -160,24 +172,210 @@
                                     Taman Kanak-Kanak (TK)
                                 </p>
                             </li>
-
                         </ul>
                     </div>
+
+                    <hr>
+
+                    <!-- BAGIAN 2: PRESTASI & PENGHARGAAN -->
+                    <div id="prestasi" class="content-section">
+                        <h2>&#127942; Prestasi & Penghargaan</h2>
+                        <p class="sublines">
+                            Daftar pencapaian kompetisi akademik, sains matematika, debat, dan desain grafis yang berhasil diraih:
+                        </p>
+
+                        <!-- Prestasi 1: Juara 1 Cerdas Cermat Matematika 2022 -->
+                        <div class="card-item achievement-card">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                                <h3 style="margin: 0; font-size: 15px; color: #b45309;">Juara 1 Lomba Cerdas Cermat Matematika</h3>
+                                <span class="skill-badge badge-gold">Tahun 2022</span>
+                            </div>
+                            <p style="font-weight: 600; color: #64748b; margin-bottom: 6px; font-size: 12px;">
+                                Kategori: Kompetisi Sains & Matematika
+                            </p>
+
+                            <!-- Foto Dokumentasi (Modul 4) -->
+                            <div class="doc-img-container">
+                                <img src="images/prestasi-juara1.jpg" alt="Piala & Sertifikat Juara 1 Cerdas Cermat Matematika 2022" class="doc-img">
+                                <div class="img-caption">Pemberian piala Juara 1 dan sertifikat penghargaan Cerdas Cermat Matematika</div>
+                            </div>
+
+                            <p class="sublines" style="margin-bottom: 0;">
+                                Meraih predikat <strong>Juara 1</strong> dalam ajang Cerdas Cermat Matematika tahun 2022, membuktikan kecepatan kalkulasi, ketepatan logika kuantitatif, dan ketelitian pemecahan masalah.
+                            </p>
+                        </div>
+
+                        <!-- Prestasi 2: Juara 3 Lomba Desain Logo 2022 -->
+                        <div class="card-item achievement-card logo">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                                <h3 style="margin: 0; font-size: 15px; color: #0284c7;">Juara 3 Lomba Desain Logo</h3>
+                                <span class="skill-badge badge-cyan">Tahun 2022</span>
+                            </div>
+                            <p style="font-weight: 600; color: #64748b; margin-bottom: 6px; font-size: 12px;">
+                                Kategori: Desain Grafis & Branding Identitas Sekolah
+                            </p>
+
+                            <!-- Foto Dokumentasi (Modul 4) -->
+                            <div class="doc-img-container">
+                                <img src="images/prestasi-logo-2022.png" alt="Penerimaan Sertifikat Juara 3 Lomba Desain Logo 2022" class="doc-img">
+                                <div class="img-caption">Penyerahan sertifikat penghargaan Juara 3 Lomba Desain Logo bersama tim</div>
+                            </div>
+
+                            <p class="sublines" style="margin-bottom: 0;">
+                                Meraih <strong>Juara 3</strong> dalam lomba desain logo dengan merancang lambang identitas institusi yang sarat makna filosofis, memadukan elemen teknologi pemrograman, pendidikan, dan sinergi industri.
+                            </p>
+                        </div>
+
+                        <!-- Prestasi 3: Juara 3 Lomba Debat 2023 -->
+                        <div class="card-item achievement-card debat">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                                <h3 style="margin: 0; font-size: 15px; color: #db2777;">Juara 3 Lomba Debat</h3>
+                                <span class="skill-badge badge-coral">Tahun 2023</span>
+                            </div>
+                            <p style="font-weight: 600; color: #64748b; margin-bottom: 6px; font-size: 12px;">
+                                Kategori: Kompetisi Debat & Public Speaking (ENIAC)
+                            </p>
+
+                            <!-- Foto Dokumentasi (Modul 4) -->
+                            <div class="doc-img-container">
+                                <img src="images/prestasi-debat-2023.jpg" alt="Penyerahan Piala Juara 3 Lomba Debat 2023" class="doc-img">
+                                <div class="img-caption">Foto bersama tim saat menerima piala Juara 3 Lomba Debat Kompetisi ENIAC</div>
+                            </div>
+
+                            <p class="sublines" style="margin-bottom: 0;">
+                                Berhasil meraih <strong>Juara 3 Lomba Debat</strong> tahun 2023 pada kompetisi ENIAC. Mengasah kemampuan berpikir kritis (*critical thinking*), seni retorika, penyusunan argumen berbasis data, dan kolaborasi tim.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <!-- BAGIAN 3: PENGALAMAN ORGANISASI -->
+                    <div id="organisasi" class="content-section">
+                        <h2>&#128101; Pengalaman Organisasi & Kepemimpinan</h2>
+                        <p class="sublines">
+                            Pengalaman kepemimpinan formal dan pembentukan karakter kerjasama:
+                        </p>
+
+                        <!-- Organisasi 1: OSIS 2024-2025 -->
+                        <div class="card-item org-card">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                                <h3 style="margin: 0; font-size: 15px; color: #1e3a8a;">Sekretaris Umum OSIS</h3>
+                                <span class="skill-badge badge-blue">2024 — 2025</span>
+                            </div>
+                            <p style="font-weight: 600; color: #2563eb; margin-bottom: 6px; font-size: 13px;">
+                                OSIS SMK Negeri 7 Makassar
+                            </p>
+                            
+                            <div class="doc-img-container">
+                                <img src="images/osis-experience.jpg" alt="Dokumentasi Sekretaris Umum OSIS SMKN 7 Makassar" class="doc-img">
+                                <div class="img-caption">Kepengurusan OSIS dan kepanitiaan Pemilihan Ketua OSIS SMK Negeri 7 Makassar</div>
+                            </div>
+
+                            <p class="sublines" style="margin-bottom: 0;">
+                                Menjabat sebagai <strong>Sekretaris Umum OSIS</strong> periode 2024—2025. Mengatur surat-menyurat resmi, menyusun proposal dan laporan pertanggungjawaban kegiatan, memimpin notulensi rapat koordinasi pengurus, serta sukses menyelenggarakan pesta demokrasi sekolah (Pemilihan Ketua OSIS).
+                            </p>
+                        </div>
+
+                        <!-- Organisasi 2: Gerakan Pramuka 2020 -->
+                        <div class="card-item org-card">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                                <h3 style="margin: 0; font-size: 15px; color: #047857;">Anggota Gerakan Pramuka</h3>
+                                <span class="skill-badge badge-green">Tahun 2020</span>
+                            </div>
+                            <p class="sublines" style="margin-bottom: 0;">
+                                Aktif dalam kegiatan kepramukaan, pembinaan kedisiplinan mental, ketangguhan fisik, kemandirian beregu, dan pengabdian sosial.
+                            </p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <!-- BAGIAN 4: PORTOFOLIO PROYEK DESAIN KREATIF -->
+                    <div id="proyek" class="content-section">
+                        <h2>&#127912; Portofolio Proyek Desain Kreatif</h2>
+                        <p class="sublines">
+                            Eksplorasi karya desain grafis, perancangan logo institusi, dan antarmuka aplikasi digital (UI/UX):
+                        </p>
+
+                        <!-- Proyek 1: Desain Logo SMKN 7 -->
+                        <div class="card-item project-card logo-smk">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                                <h3 style="margin: 0; font-size: 15px; color: #0284c7;">Desain Logo SMK Negeri 7 Makassar</h3>
+                                <span class="skill-badge badge-cyan">Branding Logo</span>
+                            </div>
+                            <p style="font-weight: 600; color: #0284c7; margin-bottom: 6px; font-size: 13px;">
+                                Karya Juara 3 Lomba Desain Logo (2022)
+                            </p>
+
+                            <div class="doc-img-container" style="background:#ffffff;">
+                                <img src="images/desain-logo-smkn7.png" alt="Desain Logo SMK Negeri 7 Makassar" class="doc-img contain-fit">
+                                <div class="img-caption">Logo resmi berformat vektor dengan simbol buku, padi, roda gigi coding &lt;/&gt;, dan bintang emas</div>
+                            </div>
+
+                            <p class="sublines" style="margin-bottom: 0;">
+                                Desain logo berbentuk perisai segilima yang merepresentasikan sinergi teknologi informasi & coding, ilmu pengetahuan, pertanian/kemakmuran, dan karakter generasi muda berprestasi.
+                            </p>
+                        </div>
+
+                        <!-- Proyek 2: CorelDRAW Brosur RPL -->
+                        <div class="card-item project-card">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                                <h3 style="margin: 0; font-size: 15px; color: #059669;">Desain Brosur Jurusan RPL (CorelDRAW)</h3>
+                                <span class="skill-badge badge-green">CorelDRAW</span>
+                            </div>
+                            <p style="font-weight: 600; color: #10b981; margin-bottom: 6px; font-size: 13px;">
+                                Desain Pertama Grafis Vektor — SMK Negeri 7 Makassar
+                            </p>
+
+                            <div class="doc-img-container">
+                                <img src="images/coreldraw-project.jpg" alt="Desain Brosur RPL CorelDRAW" class="doc-img">
+                                <div class="img-caption">Karya desain leaflet profil jurusan Rekayasa Perangkat Lunak dan potret kelas X RPL 1</div>
+                            </div>
+
+                            <p class="sublines" style="margin-bottom: 0;">
+                                Brosur lipat tiga yang dirancang menggunakan software CorelDRAW, menyajikan profil profesi software engineering, prospek karir, dan dokumentasi kebersamaan kelas.
+                            </p>
+                        </div>
+
+                        <!-- Proyek 3: Figma UI Pinterest -->
+                        <div class="card-item project-card figma">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                                <h3 style="margin: 0; font-size: 15px; color: #7c3aed;">UI/UX Design Pinterest Mobile (Figma)</h3>
+                                <span class="skill-badge badge-purple">Figma UI/UX</span>
+                            </div>
+                            <p style="font-weight: 600; color: #8b5cf6; margin-bottom: 6px; font-size: 13px;">
+                                Desain Pertama Antarmuka Aplikasi Mobile
+                            </p>
+
+                            <div class="doc-img-container">
+                                <img src="images/figma-project.png" alt="Desain UI Aplikasi Pinterest di Figma" class="doc-img">
+                                <div class="img-caption">Prototyping alur mobile app Pinterest (Splash, Welcome, Login, dan Register Form)</div>
+                            </div>
+
+                            <p class="sublines" style="margin-bottom: 0;">
+                                Proyek UI/UX mobile pertama menggunakan Figma, memfokuskan tata letak input form yang bersih, kontras warna yang nyaman, serta hierarki tipografi yang jelas.
+                            </p>
+                        </div>
+
+                    </div>
+
                 </div>
 
                 <!-- 3. Sidebar Kanan: Target 2-3 Tahun & Penguasaan Skill (Modul 5: #sidebar-kanan) -->
                 <div id="sidebar-kanan">
                     <div id="keahlian">
                         <h2 style="font-size: 16px; margin-top: 0;">Target 2-3 Tahun</h2>
-                        <div style="background-color: #ffffff; border: 1px solid #e2e8f0; padding: 10px; border-radius: 5px; margin-bottom: 15px;">
-                            <p class="infotext" style="font-size: 11px; margin-bottom: 6px; font-weight: bold; color: #1a2a6c;">
-                                Target Akademik & Karir:
+                        <div style="background-color: #ffffff; border: 1px solid #e2e8f0; padding: 12px; border-radius: 6px; margin-bottom: 16px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+                            <p class="infotext" style="font-size: 11px; margin-bottom: 6px; font-weight: bold; color: #1e3a8a;">
+                                Rencana Pengembangan Diri:
                             </p>
-                            <ul style="padding-left: 15px; font-size: 12px; color: #444444; line-height: 1.5;">
-                                <li>Menuntaskan studi S1 Teknik Komputer UNM dengan predikat Cumlaude.</li>
-                                <li>Memperdalam kemampuan sistem terdistribusi & arsitektur komputer.</li>
-                                <li>Membangun aplikasi web full-stack berbasis PHP modern dan C++.</li>
-                                <li>Mengikuti sertifikasi dan publikasi riset bidang rekayasa komputer.</li>
+                            <ul style="padding-left: 14px; font-size: 12px; color: #475569; line-height: 1.55;">
+                                <li>Lulus S1 Teknik Komputer UNM dengan predikat <em>Cumlaude</em>.</li>
+                                <li>Menguasai arsitektur sistem komputer & komputasi awan.</li>
+                                <li>Memperdalam full-stack web berbasis PHP & framework modern.</li>
+                                <li>Aktif berkompetisi pada ajang riset teknologi & debat nasional.</li>
                             </ul>
                         </div>
 
@@ -185,24 +383,32 @@
                         <h3 style="font-size: 14px;">Bahasa Dikuasai</h3>
                         
                         <div style="margin-top: 10px;">
-                            <strong style="font-size: 12px; color: #00599c;">&bull; C++</strong>
+                            <strong style="font-size: 12px; color: #0284c7;">&bull; C++</strong>
                             <div style="background: #e2e8f0; height: 6px; border-radius: 3px; margin: 4px 0 10px 0;">
-                                <div style="background: #00599c; height: 100%; width: 80%; border-radius: 3px;"></div>
+                                <div style="background: #0284c7; height: 100%; width: 80%; border-radius: 3px;"></div>
                             </div>
 
-                            <strong style="font-size: 12px; color: #777bb4;">&bull; PHP</strong>
+                            <strong style="font-size: 12px; color: #6366f1;">&bull; PHP</strong>
                             <div style="background: #e2e8f0; height: 6px; border-radius: 3px; margin: 4px 0 10px 0;">
-                                <div style="background: #777bb4; height: 100%; width: 75%; border-radius: 3px;"></div>
+                                <div style="background: #6366f1; height: 100%; width: 75%; border-radius: 3px;"></div>
                             </div>
 
-                            <strong style="font-size: 12px; color: #e44d26;">&bull; HTML & CSS</strong>
+                            <strong style="font-size: 12px; color: #f97316;">&bull; HTML & CSS</strong>
                             <div style="background: #e2e8f0; height: 6px; border-radius: 3px; margin: 4px 0 10px 0;">
-                                <div style="background: #e44d26; height: 100%; width: 85%; border-radius: 3px;"></div>
+                                <div style="background: #f97316; height: 100%; width: 85%; border-radius: 3px;"></div>
                             </div>
                         </div>
 
-                        <div style="margin-top: 20px;">
-                            <a href="contact.html" class="btn" style="width: 100%; font-size: 11px; text-align: center; display: block;">Kirim Pesan</a>
+                        <hr>
+                        <h3 style="font-size: 14px;">Software Desain</h3>
+                        <div style="margin-top: 8px;">
+                            <span class="skill-badge badge-cyan" style="margin-bottom: 5px; display: inline-block;">Logo Design</span>
+                            <span class="skill-badge badge-green" style="margin-bottom: 5px; display: inline-block;">CorelDRAW</span>
+                            <span class="skill-badge badge-purple" style="margin-bottom: 5px; display: inline-block;">Figma UI/UX</span>
+                        </div>
+
+                        <div style="margin-top: 22px;">
+                            <a href="contact.html" class="btn" style="width: 100%; font-size: 11px; text-align: center; display: block;">Hubungi Saya</a>
                         </div>
                     </div>
                 </div>

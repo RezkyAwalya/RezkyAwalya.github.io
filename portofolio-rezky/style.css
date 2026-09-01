@@ -1,18 +1,19 @@
 /* ==========================================================================
-   WEBSITE PORTOFOLIO - REZKY AWALYA
-   Prodi S1 Teknik Komputer, Jurusan Teknik Informatika & Komputer (JTIK)
+   WEBSITE PORTOFOLIO PRIBADI - REZKY AWALYA
+   S1 Teknik Komputer, Jurusan Teknik Informatika & Komputer (JTIK)
    Universitas Negeri Makassar (UNM)
    
    File: style.css (External CSS Style Sheet)
+   Tema Desain: Modern, Aesthetic & Clean Academic Tech
    Berdasarkan Modul Praktikum Pemrograman Web (Modul 3, 4, 5, 6 & Slide Teori CSS)
    ========================================================================== */
 
 /* ==========================================================================
-   1. RESET & DASAR TIPOGRAFI (Modul 3 & Slide PPT CSS)
-   - Selector HTML/Tag: body, h1, h2, h3, p, ul, li, a, img, table, td, hr
+   1. RESET & TIPOGRAFI ESTETIK (Modul 3 & Slide PPT CSS)
+   - Selector Tag: body, h1, h2, h3, h4, p, ul, li, a, img, table, td, hr
    - Grouping Selector: h1, h2, h3, h4
-   - Font Styling: font-family, font-size, font-weight, line-height, font-style
-   - Text Styling: color, text-align, text-decoration, text-transform, letter-spacing
+   - Font Styling: font-family, font-size, font-weight, line-height, letter-spacing
+   - Text Styling: color, text-align, text-transform, text-decoration
    ========================================================================== */
 
 * {
@@ -22,22 +23,24 @@
 }
 
 body {
-    /* Slide CSS: font-family, generic family, line-height, background-color */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Slide CSS: font-family, fallback sans-serif, line-height, color */
+    font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
     font-size: 14px;
-    line-height: 1.6;
-    color: #333333;
-    background-color: #f0f3f8; /* Modul 4: background-color */
+    line-height: 1.65;
+    color: #334155; /* Slate modern */
+    background-color: #f1f5f9; /* Modul 4: background-color lembut */
     margin: 0;
     padding: 0;
+    -webkit-font-smoothing: antialiased;
 }
 
-/* Grouping Selector untuk Heading (Modul 3 & Slide CSS) */
+/* Grouping Selector untuk Judul & Heading (Modul 3 & Slide CSS) */
 h1, h2, h3, h4 {
     font-family: 'Segoe UI', Arial, sans-serif;
-    color: #1a2a6c;
-    margin-bottom: 12px;
-    font-weight: bold;
+    color: #0f172a;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
 }
 
 h1 {
@@ -46,39 +49,50 @@ h1 {
 }
 
 h2 {
-    font-size: 20px;
-    border-bottom: 2px solid #27ae60;
+    font-size: 18px;
+    color: #1e293b;
+    border-bottom: 2px solid #3b82f6; /* Aksen garis biru modern */
     padding-bottom: 6px;
-    margin-top: 15px;
+    margin-top: 18px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 h3 {
-    font-size: 16px;
-    color: #2c3e50;
+    font-size: 15px;
+    color: #1e3a8a;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 13px;
+    color: #475569;
 }
 
 p {
     margin-bottom: 14px;
     text-align: justify; /* Slide CSS: text-align */
-    color: #444444;
+    color: #475569;
 }
 
 /* Redefinisi Tag Garis Horizontal (Modul 3) */
 hr {
     border: none;
-    border-top: 1px solid #e0e0e0;
-    margin: 18px 0;
+    border-top: 1px solid #e2e8f0;
+    margin: 20px 0;
 }
 
-/* Link Style Dasar (Modul 5: a:link, a:visited, a:hover, a:active) */
+/* Link Styling (Modul 5: a:link, a:visited, a:hover, a:active) */
 a {
-    color: #1a2a6c;
+    color: #2563eb;
     text-decoration: none;
-    transition: color 0.25s ease-in-out;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
 }
 
 a:hover {
-    color: #27ae60;
+    color: #1d4ed8;
     text-decoration: underline;
 }
 
@@ -88,25 +102,26 @@ a:hover {
    ========================================================================== */
 
 #wrapper {
-    width: 1060px;
+    width: 1080px;
     max-width: 96%;
-    margin: 25px auto; /* Modul 5: margin: auto untuk penataan tengah */
+    margin: 24px auto; /* Modul 5: margin auto penataan tengah */
     background-color: #ffffff;
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08); /* Modul 6: box-shadow */
-    border-radius: 8px; /* Modul 6: border-radius */
+    box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04); /* Modul 6: box-shadow */
+    border-radius: 12px; /* Modul 6: border-radius estetik */
     overflow: hidden;
     border: 1px solid #e2e8f0;
 }
 
 /* Header Banner Website (Modul 4 & Modul 6: Linear Gradient) */
 #header {
-    background: #1b7506;
-    background: -webkit-linear-gradient(135deg, #1a2a6c 0%, #27ae60 100%);
-    background: -moz-linear-gradient(135deg, #1a2a6c 0%, #27ae60 100%);
-    background: linear-gradient(135deg, #1a2a6c 0%, #27ae60 100%); /* Modul 6: linear-gradient */
+    background: #1e3a8a;
+    background: -webkit-linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0284c7 100%);
+    background: -moz-linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0284c7 100%);
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0284c7 100%); /* Modul 6: linear-gradient */
     color: #ffffff;
-    padding: 24px 30px;
+    padding: 28px 32px;
     position: relative;
+    border-bottom: 3px solid #38bdf8;
 }
 
 #header-content {
@@ -125,10 +140,11 @@ a:hover {
     margin-bottom: 4px;
     text-transform: uppercase; /* Slide CSS: text-transform */
     letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 #logo p {
-    color: #e0f2fe;
+    color: #bae6fd;
     font-size: 13px;
     margin: 0;
     font-style: italic; /* Slide CSS: font-style */
@@ -136,27 +152,29 @@ a:hover {
 
 .header-badge {
     float: right;
-    background: rgba(255, 255, 255, 0.15);
-    padding: 8px 16px;
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    padding: 8px 18px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
     font-size: 12px;
-    font-weight: bold;
-    color: #ffffff;
+    font-weight: 600;
+    color: #f0f9ff;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 /* ==========================================================================
    3. SISTEM NAVIGASI & DROPDOWN MENU (Modul 5 & Modul 6)
    - Menu Horizontal menggunakan <ul> dan <li>
-   - Submenu Dropdown dengan posisi absolute & hover effect
-   - Transition & Border Radius
+   - Submenu Dropdown dengan posisi absolute & hover transition
+   - Border Radius & Linear Gradient
    ========================================================================== */
 
 #navbar-container {
-    background: #2c3e50;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-bottom: 2px solid #27ae60;
+    background: #0f172a;
+    border-bottom: 2px solid #3b82f6;
     position: relative;
     z-index: 100; /* Modul 3: z-index layer */
 }
@@ -173,9 +191,9 @@ a:hover {
 
 #menu {
     list-style-type: none; /* Modul 5: list-style-type: none */
-    height: 44px;
-    background: #2c3e50;
-    background: linear-gradient(to bottom, #34495e 0%, #2c3e50 100%);
+    height: 46px;
+    background: #0f172a;
+    background: linear-gradient(to bottom, #1e293b 0%, #0f172a 100%);
     position: relative;
 }
 
@@ -184,26 +202,27 @@ a:hover {
     list-style: none;
     float: left; /* Modul 5: float left untuk navigasi horizontal */
     display: block;
-    height: 44px;
+    height: 46px;
 }
 
 #menu li a {
-    display: block; /* Modul 5: display block agar seluruh area link dapat diklik */
-    padding: 0 22px;
-    line-height: 44px;
+    display: block; /* Modul 5: display block */
+    padding: 0 24px;
+    line-height: 46px;
     text-decoration: none;
     font-size: 13px;
-    font-weight: bold;
-    color: #f3f3f3;
+    font-weight: 600;
+    color: #e2e8f0;
     text-transform: uppercase; /* Slide CSS: text-transform */
-    border-right: 1px solid #1a252f;
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
     transition: background-color 0.25s ease, color 0.25s ease; /* Modul 6: transition */
 }
 
 /* State Hover & Active Menu (Modul 5 & 6) */
 #menu li a:hover,
 #menu li.active > a {
-    background-color: #27ae60;
+    background: #2563eb;
+    background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
     color: #ffffff;
     text-decoration: none;
 }
@@ -211,13 +230,15 @@ a:hover {
 /* Submenu Dropdown (Modul 6: Dropdown Navigasi) */
 #menu ul {
     position: absolute;
-    top: 44px;
+    top: 46px;
     left: 0;
-    width: 190px;
-    background: #2c3e50;
-    display: none; /* Default tersembunyi */
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
-    border-radius: 0 0 5px 5px;
+    width: 210px;
+    background: #0f172a;
+    display: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 8px 8px;
+    border: 1px solid #1e293b;
+    border-top: none;
     z-index: 999;
 }
 
@@ -229,26 +250,27 @@ a:hover {
 }
 
 #menu ul li a {
-    padding: 10px 16px;
-    line-height: 18px;
+    padding: 10px 18px;
+    line-height: 20px;
     font-size: 12px;
     text-transform: none;
-    color: #ecf0f1;
+    color: #cbd5e1;
     border-right: none;
-    border-bottom: 1px solid #34495e;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 #menu ul li a:hover {
-    background-color: #27ae60;
-    color: #ffffff;
-    text-indent: 6px; /* Modul 6: text-indent animasi geser saat hover */
+    background: #1e3a8a;
+    color: #38bdf8;
+    text-indent: 8px; /* Modul 6: text-indent animasi geser saat hover */
 }
 
 #menu ul li:last-child a {
     border-bottom: none;
+    border-radius: 0 0 8px 8px;
 }
 
-/* Menampilkan Submenu saat Hover pada Parent Li (Modul 6) */
+/* Tampilkan Submenu saat Hover (Modul 6) */
 #menu li:hover > ul {
     display: block;
 }
@@ -260,8 +282,8 @@ a:hover {
    ========================================================================== */
 
 .main-content {
-    padding: 25px;
-    min-height: 520px;
+    padding: 26px;
+    min-height: 540px;
     background-color: #ffffff;
 }
 
@@ -276,48 +298,48 @@ a:hover {
 /* Layout 2 Kolom (Modul 5 Layout) */
 #leftcolumn {
     float: left;
-    width: 310px;
-    padding: 15px;
+    width: 320px;
+    padding: 16px;
     background-color: #f8fafc;
-    border-radius: 6px;
+    border-radius: 8px;
     border: 1px solid #e2e8f0;
 }
 
 #rightcolumn {
-    margin-left: 335px;
-    padding: 10px 15px;
+    margin-left: 346px;
+    padding: 6px 14px;
 }
 
 /* Layout 3 Kolom (Modul 5 Layout) */
 #sidebar-kiri {
     float: left;
-    width: 250px;
-    padding: 15px;
+    width: 255px;
+    padding: 16px;
     background-color: #f8fafc;
     border: 1px solid #e2e8f0;
-    border-radius: 6px;
-    min-height: 480px;
+    border-radius: 8px;
+    min-height: 520px;
 }
 
 #sidebar-tengah-atau-badan {
     float: left;
-    width: 480px;
-    margin: 0 15px;
-    padding: 15px;
+    width: 485px;
+    margin: 0 14px;
+    padding: 18px;
     background-color: #ffffff;
     border: 1px solid #e2e8f0;
-    border-radius: 6px;
-    min-height: 480px;
+    border-radius: 8px;
+    min-height: 520px;
 }
 
 #sidebar-kanan {
     float: right;
-    width: 230px;
-    padding: 15px;
+    width: 240px;
+    padding: 16px;
     background-color: #f8fafc;
     border: 1px solid #e2e8f0;
-    border-radius: 6px;
-    min-height: 480px;
+    border-radius: 8px;
+    min-height: 520px;
 }
 
 /* ==========================================================================
@@ -327,99 +349,102 @@ a:hover {
 
 .profile-card {
     text-align: center;
-    padding: 15px;
+    padding: 16px 14px;
     background: #ffffff;
-    border-radius: 6px;
+    border-radius: 8px;
     border: 1px solid #e2e8f0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
 }
 
 .profile-img-container {
     width: 140px;
     height: 140px;
     margin: 0 auto 12px auto;
+    position: relative;
 }
 
 /* Styling Gambar sesuai Modul 4 */
 .profile-img {
     width: 140px; /* Modul 4: width */
     height: 140px; /* Modul 4: height */
-    object-fit: cover; /* Menjaga proporsi foto */
-    object-position: top center; /* Fokus pada area wajah */
-    border: 3px solid #27ae60; /* Modul 4: border solid */
+    object-fit: cover; /* Menjaga proporsi foto wajah */
+    object-position: top center;
+    border: 3px solid #3b82f6; /* Modul 4: border solid */
     border-radius: 50%; /* Modul 6: border-radius lingkaran */
-    opacity: 0.95; /* Modul 4: opacity */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Modul 6: transition */
+    opacity: 0.96; /* Modul 4: opacity */
+    transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Modul 6: transition */
     display: block;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
 }
 
 /* Efek Hover Gambar (Modul 4: img:hover opacity) */
 .profile-img:hover {
     opacity: 1.0;
     transform: scale(1.04);
+    box-shadow: 0 8px 18px rgba(59, 130, 246, 0.3);
 }
 
 .profile-name {
     font-size: 18px;
-    font-weight: bold;
-    color: #1a2a6c;
+    font-weight: 700;
+    color: #0f172a;
     margin-bottom: 2px;
 }
 
 .profile-title {
     font-size: 12px;
-    color: #7f8c8d;
+    color: #64748b;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin-bottom: 10px;
 }
 
 /* ==========================================================================
-   6. CARD & HIGHLIGHT KEAHLIAN (HTML, PHP, C++)
+   6. CARD KEAHLIAN (HTML, PHP, C++) & HIGHLIGHT
    - Modul 3: Selector Class
-   - Modul 4: Background Image & Icon Box
+   - Modul 4: Icon Box & Background
    - Modul 6: Box-shadow & Border Radius
    ========================================================================== */
 
 .section-title {
-    font-size: 20px;
-    color: #1a2a6c;
-    margin-bottom: 15px;
+    font-size: 18px;
+    color: #0f172a;
+    margin-bottom: 14px;
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
 .skills-grid {
-    margin-top: 15px;
+    margin-top: 14px;
 }
 
 .skill-card {
     background: #ffffff;
     border: 1px solid #e2e8f0;
-    border-left: 4px solid #27ae60;
-    border-radius: 6px;
-    padding: 14px 18px;
-    margin-bottom: 14px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-left: 4px solid #3b82f6;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .skill-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
 }
 
 .skill-card.cpp-card {
-    border-left-color: #00599c; /* C++ Blue */
+    border-left-color: #0284c7; /* C++ Ocean Blue */
 }
 
 .skill-card.php-card {
-    border-left-color: #777bb4; /* PHP Purple */
+    border-left-color: #6366f1; /* PHP Indigo */
 }
 
 .skill-card.html-card {
-    border-left-color: #e44d26; /* HTML Orange */
+    border-left-color: #f97316; /* HTML Warm Orange */
 }
 
 .skill-header {
@@ -436,41 +461,41 @@ a:hover {
 }
 
 .skill-name {
-    font-size: 15px;
-    font-weight: bold;
-    color: #2c3e50;
+    font-size: 14px;
+    font-weight: 700;
+    color: #1e293b;
 }
 
 .skill-badge {
     display: inline-block;
-    padding: 2px 8px;
-    border-radius: 12px;
+    padding: 3px 10px;
+    border-radius: 14px;
     font-size: 11px;
-    font-weight: bold;
+    font-weight: 600;
     color: #ffffff;
     margin-left: 8px;
 }
 
-.badge-cpp { background-color: #00599c; }
-.badge-php { background-color: #777bb4; }
-.badge-html { background-color: #e44d26; }
+.badge-cpp { background: linear-gradient(135deg, #0284c7, #0369a1); }
+.badge-php { background: linear-gradient(135deg, #6366f1, #4f46e5); }
+.badge-html { background: linear-gradient(135deg, #f97316, #ea580c); }
 
 /* Modul 3: Selector Class Headline, Sublines, Infotext */
 .headlines {
     font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #1a2a6c;
+    font-size: 17px;
+    color: #0f172a;
     font-weight: bold;
 }
 
 .sublines {
     font-size: 13px;
-    color: #555555;
+    color: #475569;
 }
 
 .infotext {
     font-size: 12px;
-    color: #777777;
+    color: #64748b;
     font-style: italic;
 }
 
@@ -483,14 +508,14 @@ a:hover {
     list-style-type: none;
     position: relative;
     padding-left: 20px;
-    margin-top: 15px;
+    margin-top: 14px;
 }
 
 .timeline-list::before {
     content: "";
     position: absolute;
-    top: 5px;
-    bottom: 5px;
+    top: 6px;
+    bottom: 6px;
     left: 4px;
     width: 2px;
     background: #cbd5e1;
@@ -498,8 +523,8 @@ a:hover {
 
 .timeline-item {
     position: relative;
-    margin-bottom: 20px;
-    padding-left: 15px;
+    margin-bottom: 18px;
+    padding-left: 16px;
 }
 
 .timeline-item::before {
@@ -510,51 +535,182 @@ a:hover {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #27ae60;
+    background: #3b82f6;
     border: 2px solid #ffffff;
-    box-shadow: 0 0 0 2px #27ae60;
+    box-shadow: 0 0 0 2px #3b82f6;
 }
 
 .timeline-item.active::before {
-    background: #e74c3c;
-    box-shadow: 0 0 0 2px #e74c3c;
+    background: #f43f5e;
+    box-shadow: 0 0 0 2px #f43f5e;
 }
 
 .timeline-year {
     font-size: 12px;
-    font-weight: bold;
-    color: #27ae60;
+    font-weight: 700;
+    color: #2563eb;
     text-transform: uppercase;
     margin-bottom: 2px;
 }
 
 .timeline-item.active .timeline-year {
-    color: #e74c3c;
+    color: #f43f5e;
 }
 
 .timeline-school {
     font-size: 14px;
-    font-weight: bold;
-    color: #1a2a6c;
+    font-weight: 700;
+    color: #0f172a;
 }
 
 .timeline-desc {
     font-size: 12px;
-    color: #666666;
+    color: #64748b;
     margin-top: 2px;
     margin-bottom: 0;
 }
 
 /* ==========================================================================
-   8. FORMULIR KONTAK (Modul 3 & 6: Form Styling & Buttons)
-   - Styling Table, Input, Textarea, Button
+   8. CARD PROYEK, ORGANISASI & PRESTASI (Modul 3, 4, 6)
+   - Selector Class: .card-item, .project-card, .org-card, .achievement-card
+   - CSS Image: border, border-radius, opacity, transition hover
+   - Linear Gradient Badge
+   ========================================================================== */
+
+.content-section {
+    margin-top: 22px;
+    padding-top: 8px;
+}
+
+.card-item {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.07);
+}
+
+/* Card Prestasi dengan Aksen Emas & Coral */
+.achievement-card {
+    border-left: 5px solid #f59e0b;
+    background: linear-gradient(to right, #fffdfa 0%, #ffffff 100%);
+}
+
+.achievement-card.debat {
+    border-left-color: #ec4899; /* Pink / Coral Debat */
+}
+
+.achievement-card.logo {
+    border-left-color: #0ea5e9; /* Sky Blue Desain Logo */
+}
+
+/* Card Organisasi dengan Aksen Biru & Cyan */
+.org-card {
+    border-left: 5px solid #2563eb;
+}
+
+/* Card Proyek dengan Aksen Hijau & Ungu */
+.project-card {
+    border-left: 5px solid #10b981;
+}
+
+.project-card.figma {
+    border-left-color: #8b5cf6;
+}
+
+.project-card.logo-smk {
+    border-left-color: #0284c7;
+}
+
+/* Styling Foto Dokumentasi & Gambar Proyek (Modul 4: CSS Image) */
+.doc-img-container {
+    margin: 10px 0;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 6px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 4px;
+}
+
+.doc-img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+    opacity: 0.96;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: block;
+}
+
+.doc-img:hover {
+    opacity: 1.0;
+    transform: scale(1.02);
+}
+
+.doc-img.contain-fit {
+    object-fit: contain;
+    background: #ffffff;
+    max-height: 220px;
+    padding: 10px;
+}
+
+/* Badge Kategori dengan Linear Gradient (Modul 6) */
+.badge-gold {
+    background: linear-gradient(135deg, #d97706 0%, #f59e0b 100%);
+    color: #ffffff;
+}
+
+.badge-coral {
+    background: linear-gradient(135deg, #db2777 0%, #f43f5e 100%);
+    color: #ffffff;
+}
+
+.badge-cyan {
+    background: linear-gradient(135deg, #0284c7 0%, #06b6d4 100%);
+    color: #ffffff;
+}
+
+.badge-blue {
+    background: linear-gradient(135deg, #1d4ed8 0%, #3b82f6 100%);
+    color: #ffffff;
+}
+
+.badge-purple {
+    background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+    color: #ffffff;
+}
+
+.badge-green {
+    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+    color: #ffffff;
+}
+
+.img-caption {
+    font-size: 11px;
+    color: #64748b;
+    font-style: italic;
+    margin-top: 6px;
+    text-align: center;
+}
+
+/* ==========================================================================
+   9. FORMULIR KONTAK & TABEL (Modul 3 & 6: Form Styling & Buttons)
    ========================================================================== */
 
 .contact-box {
     background: #ffffff;
     border: 1px solid #e2e8f0;
-    border-radius: 6px;
+    border-radius: 8px;
     padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
 }
 
 .form-group {
@@ -563,9 +719,9 @@ a:hover {
 
 .form-label {
     display: block;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 13px;
-    color: #2c3e50;
+    color: #1e293b;
     margin-bottom: 6px;
 }
 
@@ -575,16 +731,16 @@ a:hover {
     font-family: inherit;
     font-size: 13px;
     border: 1px solid #cbd5e1;
-    border-radius: 4px;
+    border-radius: 6px;
     background-color: #f8fafc;
-    transition: border-color 0.25s ease, background-color 0.25s ease;
+    transition: border-color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .form-control:focus {
     outline: none;
-    border-color: #27ae60;
+    border-color: #3b82f6;
     background-color: #ffffff;
-    box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.15);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.18);
 }
 
 textarea.form-control {
@@ -597,36 +753,37 @@ textarea.form-control {
     display: inline-block;
     padding: 10px 22px;
     font-size: 13px;
-    font-weight: bold;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     color: #ffffff;
-    background-color: #27ae60;
+    background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
     text-decoration: none;
-    transition: background-color 0.25s ease, transform 0.2s ease;
-    box-shadow: 0 2px 6px rgba(39, 174, 96, 0.3);
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
 }
 
 .btn:hover {
-    background-color: #219150;
+    background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
     color: #ffffff;
     text-decoration: none;
-    transform: translateY(-1px);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(37, 99, 235, 0.35);
 }
 
 .btn-secondary {
-    background-color: #34495e;
-    box-shadow: 0 2px 6px rgba(52, 73, 94, 0.3);
+    background: linear-gradient(135deg, #475569 0%, #64748b 100%);
+    box-shadow: 0 4px 10px rgba(71, 85, 105, 0.2);
 }
 
 .btn-secondary:hover {
-    background-color: #2c3e50;
+    background: linear-gradient(135deg, #334155 0%, #475569 100%);
 }
 
-/* Info List & Table (Modul 3 Table Styling) */
+/* Tabel Info Biodata (Modul 3 Table Styling) */
 .info-table {
     width: 100%;
     border-collapse: collapse;
@@ -640,35 +797,34 @@ textarea.form-control {
 }
 
 .info-table td.label-col {
-    font-weight: bold;
-    color: #2c3e50;
+    font-weight: 600;
+    color: #1e293b;
     width: 35%;
 }
 
 /* ==========================================================================
-   9. FOOTER (Modul 5: .footer & ID #footer)
-   - text-align: center, font-size, padding
+   10. FOOTER (Modul 5: .footer & ID #footer)
    ========================================================================== */
 
 #footer {
-    background-color: #1a252f;
-    color: #bdc3c7;
-    padding: 22px 25px;
+    background-color: #0f172a;
+    color: #94a3b8;
+    padding: 24px 25px;
     text-align: center; /* Modul 5: text-align: center */
     font-size: 12px;
-    border-top: 3px solid #27ae60;
+    border-top: 3px solid #3b82f6;
     clear: both; /* Modul 5: clear both untuk membersihkan float */
 }
 
 #footer p {
-    color: #bdc3c7;
+    color: #94a3b8;
     text-align: center;
     margin: 3px 0;
 }
 
 #footer a {
-    color: #2ecc71;
-    font-weight: bold;
+    color: #38bdf8;
+    font-weight: 600;
 }
 
 #footer a:hover {
@@ -676,7 +832,7 @@ textarea.form-control {
 }
 
 .footer-links {
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 .footer-links a {
