@@ -1,21 +1,3 @@
-/* ==========================================================================
-   WEBSITE PORTOFOLIO PRIBADI - REZKY AWALYA
-   S1 Teknik Komputer, Jurusan Teknik Informatika & Komputer (JTIK)
-   Universitas Negeri Makassar (UNM)
-   
-   File: style.css (External CSS Style Sheet)
-   Tema Desain: Modern, Aesthetic & Clean Academic Tech
-   Berdasarkan Modul Praktikum Pemrograman Web (Modul 3, 4, 5, 6 & Slide Teori CSS)
-   ========================================================================== */
-
-/* ==========================================================================
-   1. RESET & TIPOGRAFI ESTETIK (Modul 3 & Slide PPT CSS)
-   - Selector Tag: body, h1, h2, h3, h4, p, ul, li, a, img, table, td, hr
-   - Grouping Selector: h1, h2, h3, h4
-   - Font Styling: font-family, font-size, font-weight, line-height, letter-spacing
-   - Text Styling: color, text-align, text-transform, text-decoration
-   ========================================================================== */
-
 * {
     margin: 0;
     padding: 0;
@@ -308,6 +290,7 @@ a:hover {
 #rightcolumn {
     margin-left: 346px;
     padding: 6px 14px;
+    overflow: hidden; /* Mencegah elemen dalam kolom terpengaruh float kolom kiri */
 }
 
 /* Layout 3 Kolom (Modul 5 Layout) */
@@ -428,6 +411,9 @@ a:hover {
     margin-bottom: 12px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
 }
 
 .skill-card:hover {
@@ -447,23 +433,28 @@ a:hover {
     border-left-color: #f97316; /* HTML Warm Orange */
 }
 
+.skill-icon {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.skill-content {
+    flex: 1;
+}
+
 .skill-header {
     display: flex;
     align-items: center;
-    margin-bottom: 6px;
-}
-
-.skill-icon {
-    width: 32px;
-    height: 32px;
-    margin-right: 12px;
-    float: left;
+    margin-bottom: 4px;
 }
 
 .skill-name {
     font-size: 14px;
     font-weight: 700;
     color: #1e293b;
+    margin-bottom: 4px;
 }
 
 .skill-badge {
