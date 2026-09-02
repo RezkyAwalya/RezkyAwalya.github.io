@@ -629,6 +629,31 @@ a:hover {
     border-left-color: #0284c7;
 }
 
+.project-card.kasir {
+    border-left-color: #f97316; /* Warm Amber/Orange Kasir */
+    background: linear-gradient(to right, #fffdfb 0%, #ffffff 100%);
+}
+
+.badge-dark {
+    background: #1e293b;
+    color: #ffffff;
+}
+
+.btn-github {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    box-shadow: 0 4px 10px rgba(15, 23, 42, 0.3);
+    padding: 8px 18px;
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn-github:hover {
+    background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+    box-shadow: 0 6px 14px rgba(15, 23, 42, 0.4);
+}
+
 /* Styling Foto Dokumentasi & Gambar Proyek (Modul 4: CSS Image) */
 .doc-img-container {
     margin: 10px 0;
