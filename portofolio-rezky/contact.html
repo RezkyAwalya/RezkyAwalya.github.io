@@ -19,8 +19,13 @@
                     <h1>Rezky Awalya</h1>
                     <p>Mahasiswa Teknik Komputer | Universitas Negeri Makassar</p>
                 </div>
-                <div class="header-badge">
-                    Hubungi Saya
+                <div class="header-actions">
+                    <button type="button" class="theme-toggle-btn" aria-label="Toggle dark mode">
+                        <span class="theme-icon">&#127769;</span> <span class="theme-text">Dark Mode</span>
+                    </button>
+                    <div class="header-badge">
+                        Hubungi Saya
+                    </div>
                 </div>
             </div>
         </div>
@@ -80,14 +85,18 @@
                     <hr>
                     <h3 style="font-size: 14px;">Media Sosial & Jaringan</h3>
                     <ul style="list-style-type: none; padding-left: 0; line-height: 2; font-size: 13px;">
-                        <li>&#127760; <strong>GitHub:</strong> <a href="RezkyAwalya.github.io">RezkyAwalya.github.io</a></li>
-                        <li>&#128241; <strong>WhatsApp:</strong> <a href="#">08 2345 95 2007</a></li>
-                        <li>&#128247; <strong>Instagram:</strong> <a href="https://www.instagram.com/alrooms_?igsi=MW5oeXQ5YWl4Z2FybQ==">@alrooms_</a></li>
+                        <li>&#127760; <strong>GitHub:</strong> <a href="https://github.com/RezkyAwalya" target="_blank" rel="noopener noreferrer">RezkyAwalya.github.io</a></li>
+                        <li>&#128241; <strong>WhatsApp:</strong> <a href="https://wa.me/6282345952007?text=Halo%20Rezky%20Awalya,%20saya%20melihat%20web%20portofolio%20Anda." target="_blank" rel="noopener noreferrer">0823 4595 2007</a></li>
+                        <li>&#128247; <strong>Instagram:</strong> <a href="https://www.instagram.com/alrooms_?igsi=MW5oeXQ5YWl4Z2FybQ==" target="_blank" rel="noopener noreferrer">@alrooms_</a></li>
                     </ul>
+
+                    <a href="https://wa.me/6282345952007?text=Halo%20Rezky%20Awalya,%20saya%20tertarik%20berdiskusi%20mengenai%20proyek%20atau%20kolaborasi." target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+                        <span>&#128172;</span> Chat Cepat via WhatsApp
+                    </a>
 
                     <div style="margin-top: 15px; padding: 12px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 5px;">
                         <p class="infotext" style="margin-bottom: 0;">
-                            <strong>Ketersediaan:</strong> Terbuka untuk diskusi akademik dan proyek praktikum kolaboratif.
+                            <strong>Ketersediaan:</strong> Terbuka untuk diskusi akademik, riset teknologi, dan peluang kerja sama.
                         </p>
                     </div>
                 </div>
@@ -100,8 +109,14 @@
                     </p>
 
                     <div class="contact-box" style="margin-top: 15px;">
-                        <form action="#" method="POST" onsubmit="alert('Terima kasih! Pesan Anda telah berhasil disimulasikan terkirim.'); return false;">
-                            
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <!-- Access Key Placeholder Web3Forms -->
+                            <input type="hidden" name="access_key" value="00000000-0000-0000-0000-000000000000">
+                            <input type="hidden" name="subject" value="Pesan Baru dari Web Portofolio Rezky Awalya">
+                            <input type="hidden" name="from_name" value="Web Portofolio Rezky">
+                            <!-- Anti-spam Honeypot -->
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
                             <div class="form-group">
                                 <label for="nama" class="form-label">Nama Lengkap:</label>
                                 <input type="text" id="nama" name="nama" class="form-control" placeholder="Masukkan nama lengkap Anda" required>
@@ -123,10 +138,13 @@
                             </div>
 
                             <div style="margin-top: 20px;">
-                                <button type="submit" class="btn">Kirim Pesan</button>
-                                <button type="reset" class="btn btn-secondary" style="margin-left: 8px;">Reset Formulir</button>
+                                <button type="submit" class="btn">Kirim Pesan Email</button>
+                                <button type="reset" class="btn btn-secondary" style="margin-left: 8px;">Reset</button>
                             </div>
 
+                            <p class="infotext" style="margin-top: 14px; font-size: 11px; margin-bottom: 0;">
+                                &#128233; Pesan akan diteruskan otomatis ke <strong>awalyarezky17@gmail.com</strong>.
+                            </p>
                         </form>
                     </div>
 
@@ -148,5 +166,7 @@
 
     </div>
 
+    <!-- File JavaScript Interaktif (Dark Mode, Filter Proyek, Lightbox Modal) -->
+    <script src="script.js"></script>
 </body>
 </html>

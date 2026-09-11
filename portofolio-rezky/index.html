@@ -19,8 +19,13 @@
                     <h1>Rezky Awalya</h1>
                     <p>Mahasiswa Teknik Komputer | Universitas Negeri Makassar</p>
                 </div>
-                <div class="header-badge">
-                    Semester 3 - JTIK UNM
+                <div class="header-actions">
+                    <button type="button" class="theme-toggle-btn" aria-label="Toggle dark mode">
+                        <span class="theme-icon">&#127769;</span> <span class="theme-text">Dark Mode</span>
+                    </button>
+                    <div class="header-badge">
+                        Semester 3 - JTIK UNM
+                    </div>
                 </div>
             </div>
         </div>
@@ -93,7 +98,10 @@
                             </p>
                         </div>
 
-                        <div style="margin-top: 16px;">
+                        <div class="profile-actions">
+                            <a href="cv-rezky-awalya.pdf" download="CV_Rezky_Awalya.pdf" class="btn-cv" title="Unduh Curiculum Vitae Rezky Awalya">
+                                <span>&#128196;</span> Unduh CV (PDF)
+                            </a>
                             <a href="contact.html" class="btn" style="width: 100%; text-align: center; display: block;">Hubungi Saya</a>
                         </div>
                     </div>
@@ -170,34 +178,86 @@
                     </div>
 
                     <!-- Highlight Galeri Proyek & Prestasi -->
-                    <h2 class="section-title" style="margin-top: 24px;">Highlight Prestasi & Portofolio Desain</h2>
-                    <p class="sublines">Cuplikan karya desain grafis, logo branding, dan pencapaian lomba:</p>
+                    <h2 class="section-title" style="margin-top: 24px;">Highlight Proyek Sistem, Web & Prestasi</h2>
+                    <p class="sublines">Pilihan karya teknologi, sistem pemrograman, dan pencapaian lomba (klik kartu untuk melihat detail):</p>
 
-                    <div style="display: flex; gap: 10px; margin-top: 10px;">
+                    <!-- Filter Kategori Proyek Interaktif -->
+                    <div class="project-filter">
+                        <button type="button" class="filter-btn active" data-filter="all">Semua Kategori</button>
+                        <button type="button" class="filter-btn" data-filter="cpp">Teknik Komputer & C++</button>
+                        <button type="button" class="filter-btn" data-filter="web">Web Dinamis</button>
+                        <button type="button" class="filter-btn" data-filter="design">UI/UX & Desain</button>
+                        <button type="button" class="filter-btn" data-filter="achievement">Prestasi Lomba</button>
+                    </div>
+
+                    <!-- Grid Proyek & Karya -->
+                    <div class="projects-grid">
                         
-                        <!-- Preview Card 1: Desain Logo -->
-                        <div style="flex: 1; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.02);">
+                        <!-- Card 1: C++ / Teknik Komputer -->
+                        <div class="project-card-item lightbox-trigger" data-category="cpp"
+                             data-title="Simulasi Sistem Antrean & Struktur Data C++"
+                             data-badge="Sistem C++ & OOP"
+                             data-desc="Implementasi struktur data antrean prioritas (Priority Queue) dan pengelolaan memori dinamis menggunakan C++ berorientasi objek untuk mensimulasikan penjadwalan antrean sistem komputasi."
+                             style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.02);">
+                            <div style="background: #0f172a; border-radius: 4px; border: 1px solid #cbd5e1; height: 95px; display: flex; align-items: center; justify-content: center; padding: 10px;">
+                                <img src="images/cpp-icon.svg" alt="C++ Project" style="width: 50px; height: 50px; object-fit: contain;">
+                            </div>
+                            <h4 style="font-size: 11px; margin-top: 8px; margin-bottom: 2px;">Sistem Antrean C++</h4>
+                            <span class="skill-badge badge-cpp" style="font-size: 9px; padding: 2px 6px;">C++ OOP</span>
+                        </div>
+
+                        <!-- Card 2: Web Dinamis PHP (Projek UKK) -->
+                        <div class="project-card-item lightbox-trigger" data-category="web"
+                             data-title="Aplikasi Kasir & Inventori Toko (Projek UKK)"
+                             data-badge="PHP & MySQL"
+                             data-desc="Aplikasi manajemen penjualan retail terintegrasi database MySQL dengan manajemen multi-user, transaksi penjualan barang, cetak struk invoice, dan laporan kasir otomatis."
+                             style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.02);">
+                            <div style="background: #1e1b4b; border-radius: 4px; border: 1px solid #cbd5e1; height: 95px; display: flex; align-items: center; justify-content: center; padding: 10px;">
+                                <img src="images/php-icon.svg" alt="PHP UKK Project" style="width: 50px; height: 50px; object-fit: contain;">
+                            </div>
+                            <h4 style="font-size: 11px; margin-top: 8px; margin-bottom: 2px;">Aplikasi Kasir UKK</h4>
+                            <span class="skill-badge badge-php" style="font-size: 9px; padding: 2px 6px;">PHP & MySQL</span>
+                        </div>
+
+                        <!-- Card 3: Desain Logo SMKN 7 -->
+                        <div class="project-card-item lightbox-trigger" data-category="design"
+                             data-title="Desain Identitas Logo SMKN 7 Makassar"
+                             data-badge="Juara 3 Desain Logo"
+                             data-desc="Rancangan identitas visual logo sekolah menengah kejuruan yang memadukan simbol teknologi dan dedikasi pendidikan kejuruan, berhasil meraih Juara 3 Lomba Desain Logo (2022)."
+                             style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.02);">
                             <img src="images/desain-logo-smkn7.png" alt="Desain Logo" style="width: 100%; height: 95px; object-fit: contain; background:#ffffff; border-radius: 4px; border: 1px solid #cbd5e1;">
                             <h4 style="font-size: 11px; margin-top: 8px; margin-bottom: 2px;">Desain Logo SMKN 7</h4>
                             <span class="skill-badge badge-cyan" style="font-size: 9px; padding: 2px 6px;">Juara 3 Logo</span>
                         </div>
 
-                        <!-- Preview Card 2: Juara 1 Matematika -->
-                        <div style="flex: 1; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.02);">
+                        <!-- Card 4: Juara 1 Matematika -->
+                        <div class="project-card-item lightbox-trigger" data-category="achievement"
+                             data-title="Juara 1 Cerdas Cermat Matematika 2022"
+                             data-badge="Juara 1 Regional"
+                             data-desc="Penghargaan Juara 1 lomba cerdas cermat matematika yang menguji daya penalaran logika numerik, kalkulasi cepat, dan ketajaman analisis matematis."
+                             style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.02);">
                             <img src="images/prestasi-juara1.jpg" alt="Juara 1 Matematika" style="width: 100%; height: 95px; object-fit: cover; border-radius: 4px; border: 1px solid #cbd5e1;">
                             <h4 style="font-size: 11px; margin-top: 8px; margin-bottom: 2px;">Juara 1 Matematika</h4>
                             <span class="skill-badge badge-gold" style="font-size: 9px; padding: 2px 6px;">Cerdas Cermat</span>
                         </div>
 
-                        <!-- Preview Card 3: Juara 3 Debat -->
-                        <div style="flex: 1; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.02);">
+                        <!-- Card 5: Juara 3 Debat -->
+                        <div class="project-card-item lightbox-trigger" data-category="achievement"
+                             data-title="Juara 3 Lomba Debat Ilmiah ENIAC 2023"
+                             data-badge="Juara 3 Debat Nasional"
+                             data-desc="Prestasi Juara 3 Lomba Debat Nasional pada ajang ENIAC 2023, membuktikan kemampuan berpikir kritis, elaborasi argumen rasional, dan teknik public speaking di hadapan dewan juri."
+                             style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.02);">
                             <img src="images/prestasi-debat-2023.jpg" alt="Juara 3 Debat" style="width: 100%; height: 95px; object-fit: cover; border-radius: 4px; border: 1px solid #cbd5e1;">
-                            <h4 style="font-size: 11px; margin-top: 8px; margin-bottom: 2px;">Juara 3 Debat</h4>
+                            <h4 style="font-size: 11px; margin-top: 8px; margin-bottom: 2px;">Juara 3 Debat ENIAC</h4>
                             <span class="skill-badge badge-coral" style="font-size: 9px; padding: 2px 6px;">ENIAC 2023</span>
                         </div>
 
-                        <!-- Preview Card 4: Figma UI -->
-                        <div style="flex: 1; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.02);">
+                        <!-- Card 6: Figma UI -->
+                        <div class="project-card-item lightbox-trigger" data-category="design"
+                             data-title="Perancangan Antarmuka Pengguna Pinterest Style (Figma)"
+                             data-badge="Figma UI/UX"
+                             data-desc="Eksplorasi rancangan antarmuka pengguna berbasis layout masonry responsif, konsistensi token desain warna, dan prototipe interaktif di software Figma."
+                             style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.02);">
                             <img src="images/figma-project.png" alt="Proyek Figma" style="width: 100%; height: 95px; object-fit: cover; border-radius: 4px; border: 1px solid #cbd5e1;">
                             <h4 style="font-size: 11px; margin-top: 8px; margin-bottom: 2px;">Desain UI Figma</h4>
                             <span class="skill-badge badge-purple" style="font-size: 9px; padding: 2px 6px;">Pinterest UI</span>
@@ -206,7 +266,7 @@
                     </div>
 
                     <!-- Call to Action Box -->
-                    <div style="background: linear-gradient(to right, #eff6ff 0%, #f0fdf4 100%); border: 1px dashed #3b82f6; padding: 16px 20px; border-radius: 8px; margin-top: 22px;">
+                    <div class="call-to-action-box" style="background: linear-gradient(to right, #eff6ff 0%, #f0fdf4 100%); border: 1px dashed #3b82f6; padding: 16px 20px; border-radius: 8px; margin-top: 22px;">
                         <p style="margin-bottom: 6px; font-weight: bold; color: #1e3a8a;">
                             Ingin membaca dokumentasi lengkap riwayat pendidikan, organisasi & galeri prestasi saya?
                         </p>
@@ -234,5 +294,24 @@
 
     </div>
 
+    <!-- Lightbox / Modal Popup Pratinjau Karya & Prestasi -->
+    <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true">
+        <div class="lightbox-content">
+            <button type="button" id="lightbox-close" class="lightbox-close" aria-label="Tutup pratinjau">&times;</button>
+            <div class="lightbox-img-wrapper">
+                <img id="lightbox-img" src="" alt="Pratinjau Proyek">
+            </div>
+            <div class="lightbox-body">
+                <div class="lightbox-header">
+                    <h3 id="lightbox-title">Judul Proyek</h3>
+                    <span id="lightbox-badge" class="skill-badge badge-cyan" style="font-size: 11px;">Kategori</span>
+                </div>
+                <p id="lightbox-desc">Deskripsi lengkap dari karya atau pencapaian ini.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- File JavaScript Interaktif (Dark Mode, Filter Proyek, Lightbox Modal) -->
+    <script src="script.js"></script>
 </body>
 </html>
