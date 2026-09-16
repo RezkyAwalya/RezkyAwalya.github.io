@@ -1,223 +1,69 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-
-    <title>Contact | Rezky Awalya</title>
-
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontak Rezky Awalya">
+  <title>Kontak | Rezky Awalya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <!-- NAVBAR -->
-    <header class="navbar">
-
-        <div class="nav-container">
-
-            <a href="index.html" class="logo">
-                RA<span>.</span>
-            </a>
-
-            <nav>
-
-                <a href="index.html">
-                    Home
-                </a>
-
-                <a href="about.html">
-                    About
-                </a>
-
-                <a href="contact.html" class="active">
-                    Contact
-                </a>
-
-            </nav>
-
-        </div>
-
-    </header>
-
-
-    <main>
-
-        <!-- PAGE HEADER -->
-        <section class="page-header">
-
-            <p>GET IN TOUCH</p>
-
-            <h1>
-                Let's <span>Connect</span>
-            </h1>
-
-            <p>
-                Punya pertanyaan atau ingin berdiskusi?
-                Silakan hubungi saya.
-            </p>
-
-        </section>
-
-
-        <!-- CONTACT -->
-        <section class="section">
-
-            <div class="contact-container">
-
-
-                <!-- INFO -->
-                <div class="contact-info">
-
-                    <h2>
-                        Mari Terhubung 👋
-                    </h2>
-
-                    <p>
-                        Saya terbuka untuk berdiskusi mengenai
-                        teknologi, pemrograman, desain,
-                        maupun berbagai hal menarik lainnya.
-                    </p>
-
-
-                    <div class="contact-item">
-
-                        <div class="contact-icon">
-                            ✉
-                        </div>
-
-                        <div>
-                            <span>Email</span>
-                            <p>
-                                awalyarezky17@gmail.com
-                            </p>
-                        </div>
-
-                    </div>
-
-
-                    <div class="contact-item">
-
-                        <div class="contact-icon">
-                            📍
-                        </div>
-
-                        <div>
-                            <span>Location</span>
-                            <p>
-                                Indonesia
-                            </p>
-                        </div>
-
-                    </div>
-
-
-                    <div class="contact-item">
-
-                        <div class="contact-icon">
-                            📱
-                        </div>
-
-                        <div>
-                            <span>Contact Me</span>
-                            <p>
-                               08 2345 95 2007
-                            </p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <!-- FORM -->
-                <form class="contact-form">
-
-                    <div class="input-group">
-
-                        <label>
-                            Nama
-                        </label>
-
-                        <input
-                            type="text"
-                            placeholder="Masukkan nama Anda"
-                            required>
-
-                    </div>
-
-
-                    <div class="input-group">
-
-                        <label>
-                            Email
-                        </label>
-
-                        <input
-                            type="email"
-                            placeholder="Masukkan email Anda"
-                            required>
-
-                    </div>
-
-
-                    <div class="input-group">
-
-                        <label>
-                            Pesan
-                        </label>
-
-                        <textarea
-                            rows="6"
-                            placeholder="Tulis pesan Anda..."
-                            required></textarea>
-
-                    </div>
-
-
-                    <button
-                        type="submit"
-                        class="btn primary">
-
-                        Kirim Pesan →
-
-                    </button>
-
-                </form>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- FOOTER -->
-    <footer>
-
-        <div class="footer-content">
-
-            <h3>
-                Rezky Awalya<span>.</span>
-            </h3>
-
-            <p>
-                Computer Engineering Student
-            </p>
-
-            <p class="copyright">
-                © 2026 Rezky Awalya. All Rights Reserved.
-            </p>
-
-        </div>
-
-    </footer>
-
+  <div class="page-glow glow-one"></div>
+  <div class="page-glow glow-two"></div>
+
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand" href="index.html"><span>R</span> Rezky Awalya</a>
+      <div class="nav-links">
+        <a href="index.html">Beranda</a>
+        <a href="about.html">Tentang Saya</a>
+        <a class="active" href="contact.html">Kontak</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Ubah tema">☾</button>
+    </nav>
+  </header>
+
+  <main class="container page-main">
+    <section class="page-title reveal">
+      <span class="section-label">CONTACT / 01</span>
+      <h1>Mari <span>terhubung.</span></h1>
+      <p>Punya pertanyaan, project, atau ingin berdiskusi? Silakan hubungi saya melalui salah satu kontak berikut.</p>
+    </section>
+
+    <section class="contact-layout section-space">
+      <div class="contact-info">
+        <a class="contact-card reveal" href="https://wa.me/6282345952007" target="_blank" rel="noopener">
+          <span class="contact-icon">WA</span><div><small>WHATSAPP</small><strong>Chat langsung</strong><p>Untuk komunikasi cepat.</p></div><span>↗</span>
+        </a>
+        <a class="contact-card reveal delay-1" href="https://www.instagram.com/alrooms_?stkn=MW5oeXQ5YWl4Z2FybQ==" target="_blank" rel="noopener">
+          <span class="contact-icon">IG</span><div><small>INSTAGRAM</small><strong>@alrooms_</strong><p>Lihat aktivitas.</p></div><span>↗</span>
+        </a>
+        <a class="contact-card reveal delay-2" href="https://github.com/rezkyawalya" target="_blank" rel="noopener">
+          <span class="contact-icon">GH</span><div><small>GITHUB</small><strong>Portfolio coding</strong><p>Lihat project programming.</p></div><span>↗</span>
+        </a>
+      </div>
+
+      <div class="form-card reveal delay-1">
+        <span class="section-label">SEND A MESSAGE</span>
+        <h2>Kirim <span>pesan.</span></h2>
+        <form id="contactForm" novalidate>
+          <label>Nama<input type="text" id="name" placeholder="Nama kamu"></label>
+          <small class="form-error" id="nameError"></small>
+          <label>Email<input type="email" id="email" placeholder="nama@email.com"></label>
+          <small class="form-error" id="emailError"></small>
+          <label>Pesan<textarea id="message" rows="5" placeholder="Tulis pesan kamu..."></textarea></label>
+          <small class="form-error" id="messageError"></small>
+          <button class="btn btn-primary" type="submit">Kirim Pesan <span>↗</span></button>
+          <div class="form-feedback" id="formFeedback"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><div><strong>Rezky Awalya</strong><span>Mahasiswa Teknik Komputer • UNM</span></div><p>© 2026 Rezky Awalya. Dibuat dengan HTML, CSS & JavaScript.</p></div></footer>
+  <script src="script.js"></script>
 </body>
-
 </html>

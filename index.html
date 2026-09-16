@@ -1,300 +1,326 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Rezky | Computer Engineering Portfolio</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio Rezky Awalya - Mahasiswa Teknik Komputer Universitas Negeri Makassar">
+  <title>Rezky Awalya | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <div class="page-glow glow-one"></div>
+  <div class="page-glow glow-two"></div>
 
-    <!-- NAVBAR -->
-    <header class="navbar">
-        <div class="nav-container">
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand" href="index.html"><span>R</span> Rezky Awalya</a>
+      <div class="nav-links">
+        <a class="active" href="index.html">Beranda</a>
+        <a href="about.html">Tentang Saya</a>
+        <a href="contact.html">Kontak</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Ubah tema">☾</button>
+    </nav>
+  </header>
 
-            <a href="index.html" class="logo">
-                RA<span>.</span>
-            </a>
-
-            <nav>
-                <a href="index.html" class="active">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-
+  <main>
+    <section class="hero container">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="status-dot"></span> SEMESTER 3 • TEKNIK KOMPUTER</div>
+        <p class="hero-kicker">Halo, saya</p>
+        <h1>Rezky <span>Awalya.</span></h1>
+        <h2>Mahasiswa Teknik Komputer <strong>yang suka membangun dan mendesain.</strong></h2>
+        <p class="hero-description">
+          Saya mahasiswa S1 Teknik Komputer JTIK Universitas Negeri Makassar yang tertarik pada
+          programming, UI/UX, desain grafis, dan public speaking.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">Lihat Project <span>↗</span></a>
+          <a class="btn btn-secondary" href="about.html">Tentang Saya</a>
         </div>
-    </header>
-
-
-    <!-- HERO -->
-    <main>
-
-        <section class="hero">
-
-            <div class="hero-content">
-
-                <p class="small-title">
-                    HELLO, I'M
-                </p>
-
-                <h1>
-                    Rezky <span>Awalya</span>
-                </h1>
-
-                <h2>
-                    Computer Engineering Student
-                </h2>
-
-                <p class="hero-description">
-                    Saya adalah mahasiswa Teknik Komputer yang memiliki
-                    ketertarikan pada pemrograman, desain antarmuka,
-                    teknologi web, dan pengembangan solusi digital.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="about.html" class="btn primary">
-                        Tentang Saya →
-                    </a>
-
-                    <a href="contact.html" class="btn secondary">
-                        Hubungi Saya
-                    </a>
-                </div>
-
-            </div>
-
-
-            <!-- PROFILE CARD -->
-            <div class="hero-card">
-
-                <div class="profile-circle">
-                    RA
-                </div>
-
-                <h3>Computer Engineering</h3>
-
-                <p>
-                    Learn • Create • Innovate
-                </p>
-
-                <div class="status">
-                    <span></span>
-                    Available for Learning
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ABOUT SHORT -->
-        <section class="section">
-
-            <div class="section-title">
-
-                <p>ABOUT ME</p>
-
-                <h2>
-                    Mengenal Saya Lebih Dekat
-                </h2>
-
-            </div>
-
-            <div class="about-preview">
-
-                <div class="about-text">
-
-                    <h3>
-                        Mahasiswa yang suka belajar
-                        dan mencoba hal baru.
-                    </h3>
-
-                    <p>
-                        Saya sedang menempuh pendidikan di bidang
-                        Teknik Komputer. Dalam proses perkuliahan,
-                        saya mempelajari berbagai bidang teknologi,
-                        mulai dari pemrograman, algoritma, web,
-                        sistem komputer, hingga kecerdasan buatan.
-                    </p>
-
-                    <a href="about.html" class="text-link">
-                        Selengkapnya →
-                    </a>
-
-                </div>
-
-
-                <div class="stats">
-
-                    <div class="stat-card">
-                        <h3>2025</h3>
-                        <p>Angkatan</p>
-                    </div>
-
-                    <div class="stat-card">
-                        <h3>8+</h3>
-                        <p>Bidang Dipelajari</p>
-                    </div>
-
-                    <div class="stat-card">
-                        <h3>∞</h3>
-                        <p>Curiosity</p>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- SKILLS -->
-        <section class="section skills-section">
-
-            <div class="section-title">
-
-                <p>MY SKILLS</p>
-
-                <h2>
-                    Teknologi yang Saya Pelajari
-                </h2>
-
-            </div>
-
-
-            <div class="skills-grid">
-
-                <div class="skill-card">
-                    <div class="skill-icon">&lt;/&gt;</div>
-                    <h3>HTML & CSS</h3>
-                    <p>
-                        Membuat struktur dan tampilan
-                        website yang responsif.
-                    </p>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">JS</div>
-                    <h3>JavaScript</h3>
-                    <p>
-                        Mempelajari logika dan interaksi
-                        pada website.
-                    </p>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">PHP</div>
-                    <h3>PHP</h3>
-                    <p>
-                        Digunakan untuk database
-                        dan pengembangan web.
-                    </p>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-icon">C++</div>
-                    <h3>C++</h3>
-                    <p>
-                        Mempelajari pemrograman lanjut
-                        dan konsep OOP.
-                    </p>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- PROJECT -->
-        <section class="section">
-
-            <div class="section-title">
-
-                <p>PROJECT</p>
-
-                <h2>
-                    Beberapa Hal yang Pernah Saya Kerjakan
-                </h2>
-
-            </div>
-
-
-            <div class="project-grid">
-
-                <article class="project-card">
-
-                    <div class="project-number">
-                        01
-                    </div>
-
-                    <h3>
-                        Website
-                    </h3>
-
-                    <p>
-                        Membuat website menggunakan HTML,
-                        CSS, JavaScript, dan teknologi web lainnya.
-                    </p>
-
-                    <span>
-                        Web Development
-                    </span>
-
-                </article>
-
-                <article class="project-card">
-
-                    <div class="project-number">
-                        02
-                    </div>
-
-                    <h3>
-                        UI/UX Design
-                    </h3>
-
-                    <p>
-                        Merancang antarmuka dan pengalaman pengguna
-                        menggunakan pendekatan UI/UX.
-                    </p>
-
-                    <span>
-                        UI/UX
-                    </span>
-
-                </article>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- FOOTER -->
-    <footer>
-
-        <div class="footer-content">
-
-            <h3>
-                Rezky Awalya<span>.</span>
-            </h3>
-
-            <p>
-                Computer Engineering Student
-            </p>
-
-            <p class="copyright">
-                © 2026 Rezky Awalya. All Rights Reserved.
-            </p>
-
+        <div class="hero-meta">
+          <span>UNM</span><i></i><span>JTIK</span><i></i><span>Mahasiswa Aktif</span>
         </div>
+      </div>
 
-    </footer>
+      <div class="hero-visual reveal delay-1">
+        <div class="tech-chip chip-code">&lt;/&gt;</div>
+        <div class="tech-chip chip-number">01</div>
+        <div class="tech-chip chip-ui">UI / UX</div>
+        <div class="network network-one"></div>
+        <div class="network network-two"></div>
+        <div class="profile-orbit"></div>
+        <div class="profile-frame">
+          <div class="profile-image-wrap">
+            <img src="assets/profile.jpg" alt="Foto profil Rezky Awalya">
+          </div>
+        </div>
+        <div class="profile-tag"><span></span> Computer Engineering Student</div>
+      </div>
+    </section>
 
+    <section class="highlights container section-space">
+      <div class="mini-card reveal">
+        <span class="mini-icon">⌘</span>
+        <div><strong>Teknik Komputer</strong><small>Programming & system</small></div>
+      </div>
+      <div class="mini-card reveal delay-1">
+        <span class="mini-icon">◈</span>
+        <div><strong>UI/UX & Design</strong><small>Figma & graphic design</small></div>
+      </div>
+      <div class="mini-card reveal delay-2">
+        <span class="mini-icon">&lt;/&gt;</span>
+        <div><strong>Programming</strong><small>C++ • PHP • HTML/CSS</small></div>
+      </div>
+      <div class="mini-card reveal delay-3">
+        <span class="mini-icon">✦</span>
+        <div><strong>Public Speaking</strong><small>Debat & organisasi</small></div>
+      </div>
+    </section>
+
+    <section class="section container section-space" id="projects">
+      <div class="section-heading reveal">
+        <div>
+          <span class="section-label">01 / PROJECT & ACHIEVEMENT</span>
+          <h2>Hal yang pernah saya <span>kerjakan.</span></h2>
+        </div>
+        <p>Beberapa project, desain, dan pencapaian yang menjadi bagian dari perjalanan saya.</p>
+      </div>
+
+      <div class="filter-bar reveal" role="group" aria-label="Filter project">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="programming">Programming</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="design">UI/UX & Desain</button>
+        <button class="filter-btn" data-filter="achievement">Prestasi</button>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card reveal" data-category="programming" data-title="Queue & OOP C++" data-description="Project pemrograman C++ yang menerapkan konsep queue dan object-oriented programming.">
+          <div class="project-top"><span>01</span><span>C++</span></div>
+          <div class="project-icon">&lt;/&gt;</div>
+          <h3>Queue & OOP C++</h3>
+          <p>Implementasi struktur data queue dan konsep OOP dalam project pemrograman.</p>
+          <button class="text-link project-detail">Lihat detail ↗</button>
+        </article>
+
+        <article class="project-card featured reveal delay-1" data-category="web" data-title="Aplikasi Kasir PHP & MySQL" data-description="Project aplikasi kasir berbasis PHP dan MySQL yang dibuat untuk kebutuhan project UKK.">
+          <div class="project-top"><span>02</span><span>PHP / MYSQL</span></div>
+          <div class="project-icon">▣</div>
+          <h3>Aplikasi Kasir</h3>
+          <p>Aplikasi kasir berbasis PHP & MySQL dengan antarmuka HTML/CSS.</p>
+          <button class="text-link project-detail">Lihat detail ↗</button>
+        </article>
+
+        <article class="project-card reveal" data-category="design" data-title="UI/UX Pinterest Mobile" data-description="Eksplorasi desain antarmuka aplikasi mobile Pinterest menggunakan Figma.">
+          <div class="project-top"><span>03</span><span>FIGMA</span></div>
+          <div class="project-icon">◫</div>
+          <h3>UI/UX Pinterest Mobile</h3>
+          <p>Eksplorasi desain interface mobile dan pengalaman pengguna menggunakan Figma.</p>
+          <button class="text-link project-detail">Lihat detail ↗</button>
+        </article>
+
+        <article class="project-card reveal delay-1" data-category="design achievement" data-title="Desain Logo SMKN 7" data-description="Desain logo yang dibuat untuk kebutuhan kegiatan/kompetisi desain logo SMKN 7.">
+          <div class="project-top"><span>04</span><span>DESIGN</span></div>
+          <div class="project-icon">✦</div>
+          <h3>Desain Logo SMKN 7</h3>
+          <p>Karya desain logo yang mengantarkan saya meraih Juara 3 pada 2022.</p>
+          <button class="text-link project-detail">Lihat detail ↗</button>
+        </article>
+
+        <article class="project-card reveal" data-category="achievement" data-title="Cerdas Cermat Matematika" data-description="Meraih Juara 1 Cerdas Cermat Matematika pada tahun 2022.">
+          <div class="project-top"><span>05</span><span>2022</span></div>
+          <div class="project-icon">01</div>
+          <h3>Juara 1 Cerdas Cermat</h3>
+          <p>Prestasi dalam kompetisi Cerdas Cermat Matematika pada 2022.</p>
+          <button class="text-link project-detail">Lihat detail ↗</button>
+        </article>
+
+        <article class="project-card reveal delay-1" data-category="achievement" data-title="Debat ENIAC" data-description="Meraih Juara 3 dalam kompetisi debat ENIAC pada tahun 2023.">
+          <div class="project-top"><span>06</span><span>2023</span></div>
+          <div class="project-icon">◉</div>
+          <h3>Juara 3 Debat ENIAC</h3>
+          <p>Pengalaman kompetisi debat yang melatih komunikasi dan public speaking.</p>
+          <button class="text-link project-detail">Lihat detail ↗</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container section-space">
+      <div class="section-heading reveal">
+        <div>
+          <span class="section-label">02 / SKILLS</span>
+          <h2>Tools yang saya <span>gunakan.</span></h2>
+        </div>
+      </div>
+      <div class="skills-panel reveal">
+        <div class="skill-group"><span>Programming</span><div><b>C++</b><b>PHP</b><b>HTML/CSS</b></div></div>
+        <div class="skill-group"><span>Design</span><div><b>Figma</b><b>CorelDRAW</b></div></div>
+        <div class="skill-group"><span>Interest</span><div><b>UI/UX</b><b>System</b><b>Public Speaking</b></div></div>
+      </div>
+    </section>
+
+    <section class="cta container section-space reveal">
+      <div class="cta-content">
+        <span class="section-label">03 / MORE ABOUT ME</span>
+        <h2>Masih banyak cerita di balik portfolio ini.</h2>
+        <p>Lihat perjalanan pendidikan, organisasi, prestasi, dan target saya ke depan.</p>
+        <a class="btn btn-primary" href="about.html">Kenali Saya Lebih Jauh ↗</a>
+      </div>
+      <div class="cta-mark">{ }</div>
+    </section>
+  
+<section class="section gallery-section" id="gallery">
+  <div class="section-heading reveal">
+    <span class="eyebrow">Dokumentasi</span>
+    <h2>Jejak karya & pengalaman</h2>
+    <p>Beberapa dokumentasi karya desain, pengalaman organisasi, dan prestasi yang melengkapi perjalanan saya.</p>
+  </div>
+
+  <div class="gallery-grid">
+    <article class="gallery-card gallery-wide reveal">
+      <button class="gallery-image-button" type="button"
+        data-gallery-image="assets/project-coreldraw.jpg"
+        data-gallery-title="Desain Pertama — CorelDRAW"
+        data-gallery-caption="Desain pertama saya menggunakan CorelDRAW saat belajar Rekayasa Perangkat Lunak.">
+        <img src="assets/project-coreldraw.jpg" alt="Desain pertama menggunakan CorelDRAW" loading="lazy">
+        <span class="gallery-overlay"><span>Lihat dokumentasi</span></span>
+      </button>
+      <div class="gallery-copy">
+        <span class="gallery-tag">Desain Grafis</span>
+        <h3>Desain Pertama — CorelDRAW</h3>
+        <p>Eksplorasi desain pertama menggunakan CorelDRAW.</p>
+      </div>
+    </article>
+
+    <article class="gallery-card reveal">
+      <button class="gallery-image-button" type="button"
+        data-gallery-image="assets/project-figma.png"
+        data-gallery-title="Desain Pertama — Figma"
+        data-gallery-caption="Desain pertama saya menggunakan Figma berupa rancangan antarmuka aplikasi Pinterest mobile.">
+        <img src="assets/project-figma.png" alt="Desain pertama menggunakan Figma" loading="lazy">
+        <span class="gallery-overlay"><span>Lihat dokumentasi</span></span>
+      </button>
+      <div class="gallery-copy">
+        <span class="gallery-tag">UI/UX</span>
+        <h3>Desain Pertama — Figma</h3>
+        <p>Rancangan antarmuka Pinterest mobile.</p>
+      </div>
+    </article>
+
+    <article class="gallery-card reveal">
+      <button class="gallery-image-button" type="button"
+        data-gallery-image="assets/experience-osis.jpg"
+        data-gallery-title="Sekretaris Umum OSIS 2024–2025"
+        data-gallery-caption="Dokumentasi pengalaman organisasi sebagai Sekretaris Umum OSIS SMKN 7 Makassar periode 2024–2025.">
+        <img src="assets/experience-osis.jpg" alt="Pengalaman sebagai Sekretaris Umum OSIS" loading="lazy">
+        <span class="gallery-overlay"><span>Lihat dokumentasi</span></span>
+      </button>
+      <div class="gallery-copy">
+        <span class="gallery-tag">Organisasi</span>
+        <h3>Sekretaris Umum OSIS</h3>
+        <p>Periode 2024–2025 di SMKN 7 Makassar.</p>
+      </div>
+    </article>
+
+    <article class="gallery-card reveal">
+      <button class="gallery-image-button" type="button"
+        data-gallery-image="assets/achievement-math.jpg"
+        data-gallery-title="Juara 1 Cerdas Cermat Matematika"
+        data-gallery-caption="Dokumentasi saat meraih Juara 1 lomba Cerdas Cermat Matematika pada tahun 2022.">
+        <img src="assets/achievement-math.jpg" alt="Juara 1 lomba Cerdas Cermat Matematika 2022" loading="lazy">
+        <span class="gallery-overlay"><span>Lihat dokumentasi</span></span>
+      </button>
+      <div class="gallery-copy">
+        <span class="gallery-tag">Prestasi · 2022</span>
+        <h3>Juara 1 Cerdas Cermat</h3>
+        <p>Prestasi lomba Cerdas Cermat Matematika.</p>
+      </div>
+    </article>
+
+    <article class="gallery-card reveal">
+      <button class="gallery-image-button" type="button"
+        data-gallery-image="assets/achievement-logo.jpg"
+        data-gallery-title="Juara 3 Desain Logo"
+        data-gallery-caption="Dokumentasi saat meraih Juara 3 lomba desain logo pada tahun 2022.">
+        <img src="assets/achievement-logo.jpg" alt="Juara 3 lomba desain logo 2022" loading="lazy">
+        <span class="gallery-overlay"><span>Lihat dokumentasi</span></span>
+      </button>
+      <div class="gallery-copy">
+        <span class="gallery-tag">Prestasi · 2022</span>
+        <h3>Juara 3 Desain Logo</h3>
+        <p>Dokumentasi pencapaian lomba desain logo.</p>
+      </div>
+    </article>
+
+    <article class="gallery-card gallery-logo reveal">
+      <button class="gallery-image-button logo-image-button" type="button"
+        data-gallery-image="assets/logo-smkn7.png"
+        data-gallery-title="Logo SMKN 7 Makassar"
+        data-gallery-caption="Logo yang saya desain untuk SMKN 7 Makassar menggunakan CorelDRAW.">
+        <img src="assets/logo-smkn7.png" alt="Logo SMKN 7 Makassar hasil desain" loading="lazy">
+        <span class="gallery-overlay"><span>Lihat logo</span></span>
+      </button>
+      <div class="gallery-copy">
+        <span class="gallery-tag">Karya Desain</span>
+        <h3>Logo SMKN 7 Makassar</h3>
+        <p>Karya yang mengantarkan saya meraih Juara 3 desain logo.</p>
+      </div>
+    </article>
+
+    <article class="gallery-card gallery-wide reveal">
+      <button class="gallery-image-button" type="button"
+        data-gallery-image="assets/achievement-debate.jpg"
+        data-gallery-title="Juara 3 Debat ENIAC 2023"
+        data-gallery-caption="Dokumentasi saat meraih Juara 3 lomba debat ENIAC pada tahun 2023.">
+        <img src="assets/achievement-debate.jpg" alt="Juara 3 lomba debat ENIAC 2023" loading="lazy">
+        <span class="gallery-overlay"><span>Lihat dokumentasi</span></span>
+      </button>
+      <div class="gallery-copy">
+        <span class="gallery-tag">Prestasi · 2023</span>
+        <h3>Juara 3 Debat ENIAC</h3>
+        <p>Pengalaman berkompetisi dan mengembangkan kemampuan public speaking.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<div class="image-modal" id="imageModal" aria-hidden="true">
+  <div class="image-modal-backdrop" data-close-image-modal></div>
+  <div class="image-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="imageModalTitle">
+    <button class="modal-close image-modal-close" type="button" data-close-image-modal aria-label="Tutup">×</button>
+    <img id="imageModalPreview" src="" alt="">
+    <div class="image-modal-info">
+      <span class="eyebrow">Dokumentasi</span>
+      <h3 id="imageModalTitle"></h3>
+      <p id="imageModalCaption"></p>
+    </div>
+  </div>
+</div>
+
+</main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div><strong>Rezky Awalya</strong><span>Mahasiswa Teknik Komputer • UNM</span></div>
+      <p>© 2026 Rezky Awalya. Dibuat dengan HTML, CSS & JavaScript.</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Tutup">×</button>
+      <span class="section-label">PROJECT DETAIL</span>
+      <h2 id="modalTitle">Project</h2>
+      <p id="modalDescription"></p>
+      <div class="modal-note">Interaksi modal ini dibuat dengan JavaScript sederhana agar detail project dapat dilihat tanpa berpindah halaman.</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
